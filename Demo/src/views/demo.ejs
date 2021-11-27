@@ -1,0 +1,39 @@
+<!doctype html>
+
+<%- include('global/header'); %>
+<%- include('global/navbar'); %>
+
+
+<div class="container">
+  <table data-toggle="table"
+    data-toggle="table"
+    data-pagination="true"
+    data-search="true">
+    <thead>
+          <tr>
+            <th>Company</th>
+            <th>B-Corp Certification</th>
+            <th>ESG Sustainalytics Score</th>
+            <th>Pay Ratio</th>
+          </tr>
+      </thead>
+      <tbody>
+        <%for(let i=1; i<companies.length; i++){ %>
+          <%let name = companies[i].Company_Name; %>
+          <%let b_corp = companies[i].B_Corp_Certification; %>
+          <%let esg = companies[i].ESG_Sustainalytics_Score; %>
+          <%let pay = companies[i].Pay_Ratio; %>
+          <tr>
+            <td> <%=name%> </td>
+            <td> <%=b_corp%> </td>
+            <td> <%=esg%> </td>
+            <td> <%=pay%> </td>
+          </tr>
+        <%}%>
+    </tbody>
+  </table>
+</div
+
+
+
+<%- include('global/footer'); %>

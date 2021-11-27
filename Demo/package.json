@@ -1,0 +1,54 @@
+{
+  "name": "datajournalism",
+  "version": "1.0.0",
+  "description": "hi",
+  "main": "pageGenerator.js",
+  "dependencies": {
+    "bootstrap-table": "^1.19.1",
+    "ejs": "^3.1.6",
+    "fs": "^0.0.1-security",
+    "jest": "^26.6.3",
+    "jsdoc": "^3.6.6",
+    "jshint": "^2.12.0",
+    "less": "^3.13.1"
+  },
+  "scripts": {
+    "precompile": "node ./util/precompile.js",
+    "compile:html": "node pageGenerator.js",
+    "compile:css": "./node_modules/less/bin/lessc ./src/LESS/styles.less > ./build/css/styles.css",
+    "compile": "npm run compile:css && npm run compile:html",
+    "lint": "node ./node_modules/jshint/bin/jshint ./build/js/*.js",
+    "test": "jest",
+    "document": "node_modules/jsdoc/jsdoc.js pageGenerator.js -d docs",
+    "build": "npm run precompile && npm run compile && npm run lint && npm run test && npm run document"
+  },
+  "jshintConfig": {
+    "curly": true,
+    "eqeqeq": true,
+    "undef": true,
+    "unused": true,
+    "varstmt": true,
+    "devel": true,
+    "browser": true,
+    "esversion": 6,
+    "globals": {
+      "Plotly": true
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ursula-c-parker/DataJournalism.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ursula-c-parker/DataJournalism/issues"
+  },
+  "homepage": "https://github.com/ursula-c-parker/DataJournalism#readme"
+}
