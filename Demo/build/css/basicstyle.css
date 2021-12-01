@@ -1,0 +1,124 @@
+@font-face 
+{
+	font-family: "futura-bold";
+	src: url("fonts/Futura Bold font.ttf");
+}
+
+@font-face 
+{
+	font-family: "futura-medium-italic";
+	src: url("fonts/Futura Medium Italic font.ttf");
+}
+
+@font-face 
+{
+	font-family: "futura-condensed-medium";
+	src: url("fonts/futura medium condensed bt.ttf");
+}
+
+body
+{
+	font-family: futura-bold, sans-serif;
+	letter-spacing: 2px;
+	font-size: 12px;
+	color: #5d2e46;
+}
+
+/*eg PATAGONIA*/
+h1
+{
+	font-size: 500%;
+	letter-spacing: 5px;
+	font-family: futura-bold, sans-serif;
+	color: #183a37;
+}
+
+/*eg Search Results For*/
+h2
+{
+	font-size: 250%;
+	font-family: futura-bold, sans-serif;
+	letter-spacing: 5px;
+	color: #5d2e46;
+}
+
+/*eg "patagonia"*/
+h3
+{
+	font-size: 200%;
+	font-family: futura-bold, sans-serif;
+	color: #183a37;
+}
+
+/*eg CLOTHING COMPANY*/
+h4
+{
+	font-size: 167%;
+	font-family: futura-medium-italic, sans-serif;
+	color: #183a37;
+}
+
+/*eg Certified B-Corportation*/
+h5
+{
+	font-size: 130%;
+	font-family: futura-condensed-medium, sans-serif;
+	color: #183a37;
+}
+
+
+header
+{
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 30px 0px;
+	background-color: #5d2e46;
+	font-size: 500%;
+	letter-spacing: 16px;
+	font-family: futura-bold, sans-serif;
+	color: #f9f5e3;
+}
+
+nav
+{
+	margin: 0px;
+	padding: 15px;
+	background-color: #f9e0d9;
+	font-size: 220%;
+	letter-spacing: 5px;
+	font-family: futura-bold, sans-serif;
+	text-align: center;
+}
+
+nav a
+{
+	display: inline;
+	text-decoration: none;
+	padding: 15px 50px;
+	background-color: #f9e0d9;
+	color: #5d2e46;
+}
+
+nav a:hover
+{
+	background-color: #f5c9bd;
+}
+
+button
+{
+	width: 75%;
+	padding: 5px 25px;
+	background-color: #a49694;
+	font-size: 180%;
+	font-family: futura-bold, sans-serif;
+	letter-spacing: 4px;
+	color: white;
+	cursor: pointer;
+	border-width: 0px;
+}
+
+button:hover
+{
+	background-color: #b9aeac;
+}
