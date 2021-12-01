@@ -1,0 +1,65 @@
+<%- include ('global/header', {title:"Reveal", isBlog:false}); %>
+<%- include ('global/navbar', {blog_info: allPosts, isBlog:true}); %>
+
+
+
+  <div class = "container">
+      <div class="row d-flex align-items-center">
+        <div class="input-group">
+             <input type="text" class="form-control" placeholder="Company name" id = "search">
+             <div class="input-group-append">
+                 <button class="btn btn-secondary" type="button" id="searchBtn">
+                     <i class="fa fa-search">Search</i>
+                 </button>
+             </div>
+         </div>
+      </div>
+  </div>
+
+  <div class = "container">
+      <div class="row d-flex align-items-center">
+
+        <h3> Search History </h3>
+
+
+      </div>
+  </div>
+
+    <!-- <div class="row d-flex align-items-center">
+      <div class="col-lg">
+          <div id="beanSlides" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="Images/beans2.jpg" class=" d-block w-100" alt="Coffee Beans" >
+              </div>
+              <div class="carousel-item">
+                <img src="Images/yum.jpg" class="d-block w-100" alt="Coffee Beans">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/roast.jpg" class="d-block w-100" alt="Coffee Beans" >
+              </div>
+            </div>
+          </div>
+
+          <h4>Coffee beans, whole and ground.</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <iframe src="https://www.youtube.com/embed/wuIiy5c_iHw"width="700" height="400" frameborder="0" allowfullscreen></iframe>
+        <h4>The history of the coffee trade</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg">
+        <iframe src="https://open.spotify.com/embed-podcast/episode/6WWT3AFnxRz1g6qaLnd0c8" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <h4>A podcast that gives a nice overview on coffee basics</h4>
+      </div>
+    </div> -->
+
+
+
+
+  <%- include ('global/footer'); %>

@@ -1,0 +1,20 @@
+{
+  "name": "interestsite3.0",
+  "version": "1.0.0",
+  "description": "## Installation Make sure to install node, fs, ejs, and less by running the commands below in the terminal",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "less": "^3.12.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": { "node": "14.x" }
+}
