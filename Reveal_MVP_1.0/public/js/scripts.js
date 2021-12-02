@@ -7,6 +7,7 @@ document.getElementById("searchBtn").addEventListener("click", returnCompany);
 function returnCompany() {
   let search = document.getElementById("search").value;
   console.log(search);
+  window.location.href = "http://www.w3schools.com"
 }
 
 // function validateForm() {
