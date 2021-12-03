@@ -1,0 +1,203 @@
+body
+{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+#content
+{
+	margin: 0px 75px;
+	padding: 10px;
+}
+
+#prefForm div
+{
+	width: 100%;
+	margin: 40px 0px;
+}
+
+#prefForm div#table
+{
+	display: table;
+}
+
+#prefForm div#table div.tableRow
+{
+	display: table-row;
+	width: 100%;
+}
+
+#prefForm div#table div.tableRow p:hover
+{
+	position: relative;
+}
+
+#prefForm div#table div.tableRow p span:hover span.formTooltip
+{
+	display: block;
+}
+
+#prefForm div#table div.tableRow > *
+{
+	display: table-cell;
+	margin: 13px 15px;
+}
+
+#prefForm div#table div.tableRow p
+{
+	text-align: right;
+	font-size: 130%;
+	font-weight: bold;
+	color: #183a37;
+	width: 25%;
+}
+
+#prefForm div#table div.tableRow p span img
+{
+	cursor: pointer;
+}
+
+span.formTooltip
+{
+	display: none;
+	text-align: center;
+	font-size: 80%;
+	font-weight: normal;
+	border: 2px black solid;
+	border-radius: 15px;
+	background-color: white;
+	padding: 5px;
+	z-index: 100;
+	left: 0px;
+	margin: 15px;
+	position: absolute;
+	top: 20px;
+}
+
+#sliderHeadings > *
+{
+	display: inline;
+	margin: 0px 40px;
+}
+
+input.prefSlider
+{
+	width: 100%;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+input.prefSlider::-webkit-slider-runnable-track
+{
+	height: 14px;
+	width: 100%;
+	border: 2px black solid;
+	border-radius: 25px;
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, #f9f5e3 .15%, #f9f5e3 24.85%) repeat;
+	background-size: 100%;
+}
+
+input.prefSlider::-moz-range-track
+{
+	height: 14px;
+	width: 100%;
+	border: 2px black solid;
+	border-radius: 25px;
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, #f9f5e3 .15%, #f9f5e3 24.85%) repeat;
+	background-size: 100%;
+}
+
+input.prefSlider::-ms-track
+{
+	height: 14px;
+	width: 100%;
+	border: 2px black solid;
+	border-radius: 25px;
+}
+
+input#politicalPrefSlider::-webkit-slider-runnable-track
+{
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%, 
+	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%, 
+	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%, 
+	black 74.85%, black 75.15%, red 75.15%, red 100%) repeat;
+}
+
+input#politicalPrefSlider::-moz-range-track
+{
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%, 
+	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%, 
+	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%, 
+	black 74.85%, black 75.15%, red 75.15%, red 100%) repeat;
+}
+
+input#politicalPrefSlider::-ms-track
+{
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%, 
+	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%, 
+	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%, 
+	black 74.85%, black 75.15%, red 75.15%, red 100%) repeat;
+}
+
+input.prefSlider::-ms-fill-upper, input.prefSlider::-ms-fill-lower
+{
+	background-color: #f9f5e3;
+}
+
+input.prefSlider::-webkit-slider-thumb
+{
+	cursor: pointer;
+	appearance: none;
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	border: 2px black solid;
+	background-color: #c6ca53;
+	margin-top: -8px;
+}
+
+input.prefSlider::-moz-range-thumb
+{
+	cursor: pointer;
+	appearance: none;
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	border: 2px black solid;
+	background-color: #c6ca53;
+}
+
+input.prefSlider::-ms-thumb
+{
+	cursor: pointer;
+	appearance: none;
+	height: 14px;
+	width: 14px;
+	border-radius: 14px;
+	border: 2px black solid;
+	background-color: #c6ca53;
+	margin-top: 0;
+}
+
+input.prefSlider::-webkit-slider-thumb:hover
+{
+	background-color: #acb036
+}
+
+input.prefSlider::-moz-range-thumb:hover
+{
+	background-color: #acb036
+}
+
+input.prefSlider::-ms-thumb:hover
+{
+	background-color: #acb036
+}
+
+input.prefSlider::-ms-tooltip 
+{ 
+	display: none; 
+}
