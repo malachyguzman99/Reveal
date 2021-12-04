@@ -12,8 +12,21 @@
 </head>
 
 <body>
-    <h1>REVEAL</h1>
+    <h1><a href="/">REVEAL</a></h1>
 
+    <div>
+			<nav>
+				<ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/companies">COMPANIES</a></li>
+          <li><a href="/about">ABOUT</a></li>
+          <li><a href="/about">CONTACT</a></li>
+				</ul>
+
+			</nav>
+		</div>
+
+    <!--
     <nav class="navbar navbar-expand-lg top">
       <a class="navbar-brand" href="/">
         <img src="../images/Logo.jpeg" width="60" height="60" class="d-inline-block align-top rounded" alt="Logo" loading="lazy">
@@ -38,15 +51,42 @@
         </ul>
       </div>
     </nav>
+  -->
 
-    <div class="container">
-      <h2> <%= data %> </h2>
-      <div class="row justify-content-center">
-        <p> revealing</p>
+    <div class="margin">
+      <div class="flex-container">
+        <!-- Left/First column -->
+        <div>
+          <h2 class="uppercase"><%= data %></h2>
+          <h4>CLOTHING COMPANY</h4>
+          <p>Patagonia, Inc.'s values reflect those of a business started by a band of climbers and surfers, and the minimalist style they promoted. The approach they take towards product design demonstrates a bias for simplicity and utility.</p>
+          
+          <h1 class="small">METRIC SCORES</h1>
+
+          <ul class="inlineList noBullets">
+            <li>100 - HRC Equality Index</li>
+            <li>15.4 - B Impact Score</li>
+          </ul>
+          
+        </div>
+        <!-- Right/Second column -->
+        <div>
+          <div class="ratingNumber">
+            <badge>98</badge> PREFERENCE MATCH
+          </div>
+          
+          <ul class="greenBullets">
+            <li>Certified B-Corporation</li>
+            <li>Certified Labor Practices</li>
+            <li>Certified Climate Neutral</li>
+          </ul>
+        </div>
       </div>
+
     </div>
 
   <footer>
+    <hr>
     <h5> &copy; 2021 Reveal<br>
       All rights reserved</h5>
   </footer>

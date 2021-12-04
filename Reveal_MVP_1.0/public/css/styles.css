@@ -1,4 +1,3 @@
-
 body {
   background-color: #f9f5e3;
   font-size: 12px;
@@ -47,6 +46,7 @@ h3{
   margin-top: 30px;
   padding: 15px 20% 15px 20%;
 }
+
 h4
 {
 	font-size: 167%;
@@ -67,7 +67,6 @@ p {
   font-size: 25px;
   padding-top: 30px;
 }
-
 
 #formbutton{
 	width: 75%;
@@ -113,3 +112,183 @@ button:hover{
 .dropdown-item {
   color: #3f7e9c;
 }
+
+/* Oliver Navigation Panel Addition */
+
+h1 { /* REVEAL banner at top */
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #5d2e46;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+text-decoration: none;
+transition-duration: 0.4s;
+}
+
+h1.small { /* Smaller section breaks like Metric Scores */
+  font-size: 24px;
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: #a49694;
+}
+
+nav:hover {
+  text-decoration: none;
+  color: #a49694;
+}
+
+
+nav {
+  background-color: #f9f5e3;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px
+}
+
+nav ul {
+  margin-top: 0px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  color: #5d2e46;
+  text-decoration: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition-duration: 0.4s;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: #5d2e46;
+}
+
+/* Oliver other stuff */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+div.margin {
+  background-color: #f9f5e3;
+	margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/* Shrink margins on tablets and phones. */
+@media only screen and (max-device-width: 1366px) {
+  div.margin {
+    margin-left: auto;
+      margin-right: auto;
+      width: 95%;
+  }
+}
+
+/* Flex box to make a two-column display */
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+  
+  .flex-container > div {
+  max-width: 700px;
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+  }
+
+
+h2 { /* Company Title */
+  padding-top: 0px;
+  text-align: left;
+}
+
+
+h4 { /* Company Title Subtext (industry) */
+  color: #a49694;
+  font-size: 24px;
+}
+
+badge { /* Big green circle */
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  font-size: 2em;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #c6ca53;
+}
+
+ul.greenBullets { /* From W3 Schools */
+  list-style: none; /* Remove default bullets */
+  padding-inline-start: 50px;
+}
+
+ul.greenBullets li::before { /* From W3 Schools */
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #c6ca53; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 120px;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 20px; /* Also needed for space (tweak if needed) */
+  margin-left: -.2em; /* Also needed for space (tweak if needed) */
+  margin-top: -100px;
+  margin-bottom: -1em;
+  position: relative; 
+  left: -30px;
+  bottom: -29px;
+}
+
+p {
+  text-align: left;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+ul.inlineList {
+  padding-top: 0.5em;
+}
+
+ul.noBullets {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+footer {
+  font-family: Helvetica;
+	font-size: 14px;
+	color: #a49694;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-top: 20px;
+}
+
