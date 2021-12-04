@@ -40,7 +40,7 @@ app.get('/survey', function(request, response) {
   // let blog_info = JSON.parse(fs.readFileSync('data/content.json', 'utf8'));
   response.status(200);
   response.setHeader('Content-Type', 'text/html')
-  response.render("survey.html", {
+  response.render("survey.ejs", {
     // data: blog_info,
   });
 });
