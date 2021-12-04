@@ -1,5 +1,5 @@
 {
-  "name": "interestsite3.0",
+  "name": "Reveal_MVP_1.0",
   "version": "1.0.0",
   "description": "## Installation Make sure to install node, fs, ejs, and less by running the commands below in the terminal",
   "main": "server.js",

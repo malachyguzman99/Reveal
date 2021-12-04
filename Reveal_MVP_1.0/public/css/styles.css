@@ -1,26 +1,98 @@
 
 body {
-  color: #223937;
-  background-color: #f8f5e5;
+  background-color: #f9f5e3;
+  font-size: 12px;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  color: #5d2e46;
 }
+
 footer {
   color: #223937;
   text-align: center;
   padding-top: 200px;
   font-family: 'Futura', sans-serif;
 }
-a {
-  color: #223937;
-  font-size: 24px;
+
+h1 {
+  color: #f9f5e3;
+  background-color: #5d2e46 !important;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: .4em;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0px;
+
 }
+
+h2 {
+  color: #223937 !important;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 250%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h3{
+  color: #f8f5e5;
+  background-color: #a19694;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 20% 15px 20%;
+}
+h4
+{
+	font-size: 167%;
+	color: #5d2e46;
+}
+
+h5
+{
+	font-size: 130%;
+	font-weight: medium;
+	color: #183a37;
+}
+
+p {
+  color: #223937;
+  font-family: 'Futura', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+
+#formbutton{
+	width: 75%;
+	padding: 5px 25px;
+	background-color: #a49694;
+	font-size: 180%;
+	letter-spacing: .5em;
+	color: white;
+	cursor: pointer;
+	border-width: 0px;
+}
+
+button:hover{
+	background-color: #b9aeac;
+}
+
+
 .nav-item{
-  padding-left: 60px !important;
-  padding-right: 60px !important;
+  padding-left: 10px !important;
+  padding-right: 100px !important;
 }
 .nav-link{
   font-family: 'Futura', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: medium;
+  font-size: 200%;
   color: #563145 !important;
 }
 .form-control{
@@ -31,57 +103,13 @@ a {
   color: #a19694 !important;
 }
 .top {
-  background-color: #f4e1da;
+  background-color: #f9e0d9;
 }
 .row {
   text-align: center;
   margin: 30px 0px 0px 0px;
 }
-.content {
-  text-align: left !important;
-  font-size: 30px !important;
-}
 .nav-link.dropdown-toggle,
 .dropdown-item {
   color: #3f7e9c;
-}
-
-h1 {
-  color: #f8f5e5;
-  background-color: #563145 !important;
-  font-family: 'Futura', sans-serif;
-  font-weight: bold;
-  font-size: 60px;
-  text-align: center;
-  letter-spacing: 15px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-h2 {
-  color: #223937 !important;
-  font-family: 'Futura', sans-serif;
-  font-weight: bold;
-  font-size: 45px;
-  text-align: center;
-  padding-top: 30px;
-}
-
-h3{
-  color: #f8f5e5;
-  background-color: #a19694;
-  font-family: 'Futura', sans-serif;
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
-  margin-top: 50px;
-  padding: 15px 35% 15px 35%;
-}
-
-p {
-  color: #223937;
-  font-family: 'Futura', sans-serif;
-  text-align: center !important;
-  font-size: 25px;
-  padding-top: 20px;
 }

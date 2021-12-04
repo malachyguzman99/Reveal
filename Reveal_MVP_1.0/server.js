@@ -22,7 +22,6 @@ app.get('/', function(request, response) {
   response.setHeader('Content-Type', 'text/html')
   response.render("index",{
     // data: blog_info,
-    // allPosts: blog_info
   });
 });
 
@@ -33,9 +32,33 @@ app.get('/about', function(request, response) {
   response.setHeader('Content-Type', 'text/html')
   response.render("about",{
     // data: blog_info,
-    // allPosts: blog_info
   });
 });
+
+
+app.get('/survey', function(request, response) {
+  // let blog_info = JSON.parse(fs.readFileSync('data/content.json', 'utf8'));
+  response.status(200);
+  response.setHeader('Content-Type', 'text/html')
+  response.render("survey.html", {
+    // data: blog_info,
+  });
+});
+
+
+app.get('/companies/:companyname', function(request, response) {
+  // let blog_info = JSON.parse(fs.readFileSync('data/content.json', 'utf8'));
+  let company = request.params.companyname;
+  // console.log("company");
+  response.status(200);
+  response.setHeader('Content-Type', 'text/html')
+  response.render("company", {
+      data: company,
+      company: true
+  });
+});
+
+
 
 // Because routes/middleware are applied in order, this will act as a default error route in case of an invalid route
 app.use("", function(request, response){
@@ -43,6 +66,7 @@ app.use("", function(request, response){
   response.setHeader('Content-Type', 'text/html')
   response.render("error", {
     "errorCode":"404",
+    company: false
     });
 });
 

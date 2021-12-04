@@ -120,25 +120,25 @@ input.prefSlider::-ms-track
 
 input#politicalPrefSlider::-webkit-slider-runnable-track
 {
-	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%, 
-	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%, 
-	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%, 
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%,
+	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%,
+	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%,
 	black 74.85%, black 75.15%, red 75.15%, red 100%) repeat;
 }
 
 input#politicalPrefSlider::-moz-range-track
 {
-	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%, 
-	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%, 
-	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%, 
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%,
+	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%,
+	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%,
 	black 74.85%, black 75.15%, red 75.15%, red 100%) repeat;
 }
 
 input#politicalPrefSlider::-ms-track
 {
-	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%, 
-	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%, 
-	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%, 
+	background: repeating-linear-gradient(90deg, black -.15%, black .15%, blue .15%, blue 24.85%,
+	black 24.85%, black 25.15%, #8080ff 25.15%, #8080ff 49.85%,
+	black 49.85%, black 50.15%, #ff8080 50.15%, #ff8080 74.85%,
 	black 74.85%, black 75.15%, red 75.15%, red 100%) repeat;
 }
 
@@ -197,7 +197,7 @@ input.prefSlider::-ms-thumb:hover
 	background-color: #acb036
 }
 
-input.prefSlider::-ms-tooltip 
-{ 
-	display: none; 
+input.prefSlider::-ms-tooltip
+{
+	display: none;
 }

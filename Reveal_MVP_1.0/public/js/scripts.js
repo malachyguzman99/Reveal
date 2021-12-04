@@ -1,19 +1,20 @@
 console.log("js/scripts.js connected to index.html");
-localStorage.setItem("top-secret-information", "you would never guess what kind of data is stored here.")
 
 document.getElementById("searchBtn").addEventListener("click", returnCompany);
 
-
 function returnCompany() {
   let search = document.getElementById("search").value;
-  console.log(search);
-  window.location.href = "http://www.w3schools.com"
+  window.location.href = '/companies/'+search;
+  localStorage.setItem(search, search);
+  // history();
 }
 
-// function validateForm() {
-//   let x = document.forms["myForm"]["fname"].value;
-//   if (x == "") {
-//     alert("Name must be filled out");
-//     return false;
-//   }
-// }
+
+function history(){
+  const visited = [];
+  for(let i=0; i<localStorage.length; i++){
+    visited.push(localStorage.getItem(localStorage.key(i)));
+  }
+  // console.log(visited);
+  return visited;
+}
