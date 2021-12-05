@@ -12,9 +12,8 @@
 	<title>Preference Survey</title>
 </head>
 <body>
-	<h1>REVEAL</h1>
-
-  <%- include('global/navbar'); %>
+	<%- include ('global/header', {title:"Reveal"}); %>
+  	<%- include('global/navbar'); %>
 
 	<div id="content">
 		<h2>PREFERENCE SURVEY</h2>
@@ -93,7 +92,7 @@
 				</div><br>
 			</div>
 			<div>
-				<button type="submit" id="formbutton">SUBMIT</button>
+				<button class="special-button" type="submit">Submit</button>
 			</div>
 		</form>
 	</div>
