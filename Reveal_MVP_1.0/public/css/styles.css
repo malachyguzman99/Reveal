@@ -8,92 +8,111 @@ body {
 
 footer {
   color: #223937;
-  text-align: center;
+  text-align: left;
+  padding: 20px;
   padding-top: 200px;
   font-family: 'Futura', sans-serif;
+  font-size: 130%;
+	font-weight: medium;
 }
 
-h1 {
-  color: #f9f5e3;
-  background-color: #5d2e46 !important;
+header
+{
+  background-color: #5d2e46;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
   font-size: 45px;
-  text-align: center;
   letter-spacing: .4em;
+  color: #f9f5e3;
   padding-top: 40px;
   padding-bottom: 40px;
   margin: 0px;
-
+  text-align: center;
 }
 
-h2 {
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 { /* ex-Company Title (Company Page)*/
+  padding-top: 30px;
+  text-align: left;
   color: #223937 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  font-size: 250%;
-  text-align: center;
-  padding-top: 30px;
+  font-size: 230%;
 }
 
-h3{
-  color: #f8f5e5;
-  background-color: #a19694;
+h2 { /* ex-"Preference Survey" (Survey page)*/
+  padding-top: 0px;
+  color: #223937 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  font-size: 200%;
-  text-align: center;
-  margin-top: 30px;
-  padding: 15px 20% 15px 20%;
+  font-size: 45px;
 }
 
-h4
+h3 /* Company Title Subtext (industry) (Company page) */
+{
+  font-size: 12px;
+	font-weight: medium;
+	font-style: italic;
+	color: #183a37;
+}
+
+h4/*ex- subtitle "Please rate how important each of the following are to you" (Survey Page)*/
 {
 	font-size: 167%;
 	color: #5d2e46;
 }
 
-h5
-{
-	font-size: 130%;
-	font-weight: medium;
-	color: #183a37;
+h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
+  width: 100%;
+  text-transform: uppercase;
+  color: #f8f5e5;
+  background-color: #a19694;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 20% 15px 20%;
+  letter-spacing: .1em;
 }
 
 p {
   color: #223937;
   font-family: 'Futura', sans-serif;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 30px;
-}
-
-#formbutton{
-	width: 75%;
-	padding: 5px 25px;
-	background-color: #a49694;
-	font-size: 180%;
-	letter-spacing: .5em;
-	color: white;
-	cursor: pointer;
-	border-width: 0px;
+  text-align: left;
 }
 
 button:hover{
 	background-color: #b9aeac;
 }
 
+nav {
+  background-color: #f9e0d9;
+}
 
 .nav-item{
-  padding-left: 10px !important;
-  padding-right: 100px !important;
+  display: inline;
+  padding: 0px 30px !important;
 }
+
 .nav-link{
   font-family: 'Futura', sans-serif;
   font-weight: medium;
-  font-size: 200%;
+  font-size: 25px;
   color: #563145 !important;
 }
+
+.nav-link:hover
+{
+  background-color: #f5c9bd;
+}
+
 .form-control{
   font-family: 'Futura', sans-serif;
   font-weight: medium;
@@ -101,93 +120,15 @@ button:hover{
   font-size: 35px;
   color: #a19694 !important;
 }
-.top {
-  background-color: #f9e0d9;
-}
+
 .row {
   text-align: center;
   margin: 30px 0px 0px 0px;
 }
+
 .nav-link.dropdown-toggle,
 .dropdown-item {
   color: #3f7e9c;
-}
-
-/* Oliver Navigation Panel Addition */
-
-h1 { /* REVEAL banner at top */
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background-color: #5d2e46;
-  color: white;
-  text-align: center;
-  font-size: 40px;
-  margin: 0;
-text-decoration: none;
-transition-duration: 0.4s;
-}
-
-h1.small { /* Smaller section breaks like Metric Scores */
-  font-size: 24px;
-  padding-top: .25em;
-  padding-bottom: .25em;
-}
-
-h1 a {
-  text-decoration: none;
-  color: white;
-  transition-duration: 0.4s;
-}
-
-h1 a:hover {
-  text-decoration: none;
-  color: #a49694;
-}
-
-nav:hover {
-  text-decoration: none;
-  color: #a49694;
-}
-
-
-nav {
-  background-color: #f9f5e3;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 24px
-}
-
-nav ul {
-  margin-top: 0px;
-}
-
-nav li {
-  display: inline;
-}
-
-nav a {
-  display: inline-block;
-  color: #5d2e46;
-  text-decoration: none;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition-duration: 0.4s;
-}
-
-nav li a:hover {
-  color: white;
-  background-color: #5d2e46;
-}
-
-/* Oliver other stuff */
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 div.margin {
@@ -220,20 +161,8 @@ div.margin {
 	background-color: #f1f1f1;
 	margin: 10px;
 	padding: 20px;
-	font-size: 30px;
+	font-size: 25px;
   }
-
-
-h2 { /* Company Title */
-  padding-top: 0px;
-  text-align: left;
-}
-
-
-h4 { /* Company Title Subtext (industry) */
-  color: #a49694;
-  font-size: 24px;
-}
 
 badge { /* Big green circle */
   height: 100px;
@@ -266,12 +195,6 @@ ul.greenBullets li::before { /* From W3 Schools */
   bottom: -29px;
 }
 
-p {
-  text-align: left;
-  font-size: 22px;
-  padding-top: 20px;
-}
-
 ul.inlineList {
   padding-top: 0.5em;
 }
@@ -280,15 +203,3 @@ ul.noBullets {
   list-style: none;
   padding-inline-start: 0px;
 }
-
-footer {
-  font-family: Helvetica;
-	font-size: 14px;
-	color: #a49694;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  padding-top: 20px;
-}
-
