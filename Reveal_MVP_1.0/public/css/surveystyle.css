@@ -4,12 +4,14 @@ body
 	margin: 0px;
 	padding: 0px;
 	font-family: sans-serif;
+	text-align: center !important;
 }
 
 #content
 {
-	margin: 0px 75px;
-	padding: 10px;
+	margin: 10px 75px;
+	padding: 30px;
+	background-color: #f1f1f1;
 }
 
 #prefForm div
@@ -200,4 +202,9 @@ input.prefSlider::-ms-thumb:hover
 input.prefSlider::-ms-tooltip
 {
 	display: none;
+}
+
+button
+{
+	border: none;
 }
