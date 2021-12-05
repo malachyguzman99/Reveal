@@ -255,9 +255,9 @@ ul.greenBullets li::before { /* From W3 Schools */
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #c6ca53; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
-  font-size: 120px;
+  font-size: 100px;
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 20px; /* Also needed for space (tweak if needed) */
+  width: 40px; /* Also needed for space (tweak if needed)(tweaked by AJ, 20px -> 40px) */
   margin-left: -.2em; /* Also needed for space (tweak if needed) */
   margin-top: -100px;
   margin-bottom: -1em;
