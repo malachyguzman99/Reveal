@@ -7,10 +7,10 @@ body {
 }
 
 footer {
-  color: #223937;
+  color: #183a37;
   text-align: left;
   padding: 20px;
-  padding-top: 200px;
+  padding-top: 150px;
   font-family: 'Futura', sans-serif;
   font-size: 130%;
 	font-weight: medium;
@@ -21,7 +21,7 @@ header
   background-color: #5d2e46;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 400%;
   letter-spacing: .4em;
   color: #f9f5e3;
   padding-top: 40px;
@@ -37,7 +37,7 @@ header
 h1 { /* ex-Company Title (Company Page)*/
   padding-top: 30px;
   text-align: left;
-  color: #223937 !important;
+  color: #183a37 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
   font-size: 230%;
@@ -45,15 +45,15 @@ h1 { /* ex-Company Title (Company Page)*/
 
 h2 { /* ex-"Preference Survey" (Survey page)*/
   padding-top: 0px;
-  color: #223937 !important;
+  color: #183a37 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 400%;
 }
 
 h3 /* Company Title Subtext (industry) (Company page) */
 {
-  font-size: 12px;
+  font-size: 80%;
 	font-weight: medium;
 	font-style: italic;
 	color: #183a37;
@@ -68,11 +68,11 @@ h4/*ex- subtitle "Please rate how important each of the following are to you" (S
 h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
   width: 100%;
   text-transform: uppercase;
-  color: #f8f5e5;
-  background-color: #a19694;
+  color: #f9f5e3;
+  background-color: #a49694;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   margin-top: 30px;
   padding: 15px 20% 15px 20%;
@@ -80,32 +80,51 @@ h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
 }
 
 p {
-  color: #223937;
+  color: #183a37;
   font-family: 'Futura', sans-serif;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 30px;
   text-align: left;
 }
 
-button:hover{
-	background-color: #b9aeac;
+p a
+{
+  color: #9a4c73 ;
+}
+
+p a:hover
+{
+  text-decoration: none;
+  color: #5d2e46;
+}
+
+#searchBtn
+{
+  background-color: white;
+}
+
+#searchBtn:hover
+{
+  background-color: #eeeeee;
 }
 
 nav {
   background-color: #f9e0d9;
+  margin-bottom: 60px;
+  padding: 0px 15px !important;
 }
 
 .nav-item{
   display: inline;
-  padding: 0px 30px !important;
 }
 
 .nav-link{
   font-family: 'Futura', sans-serif;
   font-weight: medium;
-  font-size: 25px;
-  color: #563145 !important;
+  font-size: 200%;
+  color: #5d2e46 !important;
+  padding: 20px 30px !important;
 }
 
 .nav-link:hover
@@ -117,8 +136,8 @@ nav {
   font-family: 'Futura', sans-serif;
   font-weight: medium;
   font-style: italic;
-  font-size: 35px;
-  color: #a19694 !important;
+  font-size: 250%;
+  color: #a49694 !important;
 }
 
 .row {
@@ -161,7 +180,7 @@ div.margin {
 	background-color: #f1f1f1;
 	margin: 10px;
 	padding: 20px;
-	font-size: 25px;
+	font-size: 200%;
   }
 
 badge { /* Big green circle */
@@ -178,6 +197,11 @@ badge { /* Big green circle */
 ul.greenBullets { /* From W3 Schools */
   list-style: none; /* Remove default bullets */
   padding-inline-start: 50px;
+}
+
+ul.greenBullets li, ul.inlineList li
+{
+  padding-top: 15px;
 }
 
 ul.greenBullets li::before { /* From W3 Schools */
