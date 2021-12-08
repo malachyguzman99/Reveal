@@ -47,14 +47,21 @@ app.get('/survey', function(request, response) {
 
 
 app.get('/companies/:companyname', function(request, response) {
-  // let blog_info = JSON.parse(fs.readFileSync('data/content.json', 'utf8'));
-  let company = request.params.companyname;
-  // console.log("company");
+
+  let totalData = JSON.parse(fs.readFileSync('postgres/data.json', 'utf8'));
+  let companyname = request.params.companyname;
+  let companyinfo;
+
+  for(let i in totalData){
+    if(totalData[i].name==companyname){
+      companyinfo = totalData[i];
+    }
+  }
+
   response.status(200);
   response.setHeader('Content-Type', 'text/html')
   response.render("company", {
-      data: company,
-      company: true
+      data: companyinfo
   });
 });
 

@@ -9,14 +9,14 @@ function returnCompany() {
   // history();
 }
 
-function history(){
-  const visited = [];
-  for(let i=0; i<localStorage.length; i++){
-    visited.push(localStorage.getItem(localStorage.key(i)));
-  }
-  // console.log(visited);
-  return visited;
-}
+// function history(){
+//   const visited = [];
+//   for(let i=0; i<localStorage.length; i++){
+//     visited.push(localStorage.getItem(localStorage.key(i)));
+//   }
+//   // console.log(visited);
+//   return visited;
+// }
 
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
@@ -25,7 +25,7 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function storePrefFormCookies(form)  
+function storePrefFormCookies(form)
 {
   setCookie("payRatioPref", form.payRatioPref.value, 1);
   setCookie("bCorpPref", form.bCorpPref.value, 1);
@@ -52,7 +52,7 @@ function getCookie(cname) {
   return "";
 }
 
-function calculatePreferenceMatchScore() 
+function calculatePreferenceMatchScore()
 {
   score = parseInt(getCookie("payRatioPref")) + parseInt(getCookie("bCorpPref")) + parseInt(getCookie("unClimateNeutralNowPref")) + parseInt(getCookie("climateNeutralPref")) + parseInt(getCookie("politicalPrefSlider"));
   score = 4 * score;

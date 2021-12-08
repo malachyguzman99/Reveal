@@ -57,6 +57,7 @@ h3 /* Company Title Subtext (industry) (Company page) */
 	font-weight: medium;
 	font-style: italic;
 	color: #183a37;
+  text-transform: capitalize;
 }
 
 h4/*ex- subtitle "Please rate how important each of the following are to you" (Survey Page)*/
@@ -174,7 +175,7 @@ div.margin {
   padding-left: 15px;
   padding-right: 15px;
   }
-  
+
   .flex-container > div {
   max-width: 700px;
 	background-color: #f1f1f1;
@@ -214,16 +215,43 @@ ul.greenBullets li::before { /* From W3 Schools */
   margin-left: -.2em; /* Also needed for space (tweak if needed) */
   margin-top: -100px;
   margin-bottom: -1em;
-  position: relative; 
+  position: relative;
+  left: -30px;
+  bottom: -29px;
+}
+
+ul.redBullets { /* From W3 Schools */
+  list-style: none; /* Remove default bullets */
+  padding-inline-start: 50px;
+}
+
+ul.redBullets li, ul.inlineList li
+{
+  padding-top: 15px;
+}
+
+ul.redBullets li::before { /* From W3 Schools */
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #DB5461; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 100px;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 40px; /* Also needed for space (tweak if needed)(tweaked by AJ, 20px -> 40px) */
+  margin-left: -.2em; /* Also needed for space (tweak if needed) */
+  margin-top: -100px;
+  margin-bottom: -1em;
+  position: relative;
   left: -30px;
   bottom: -29px;
 }
 
 ul.inlineList {
   padding-top: 0.5em;
+  text-transform: capitalize;
 }
 
 ul.noBullets {
   list-style: none;
+  text-transform: capitalize;
   padding-inline-start: 0px;
 }
