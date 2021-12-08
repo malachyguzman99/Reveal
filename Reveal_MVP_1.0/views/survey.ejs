@@ -11,15 +11,15 @@
 
 	<title>Preference Survey</title>
 </head>
-<body>
-	<h1>REVEAL</h1>
 
-  <%- include('global/navbar'); %>
+<body>
+	<%- include ('global/header', {title:"Reveal"}); %>
+  	<%- include('global/navbar'); %>
 
 	<div id="content">
 		<h2>PREFERENCE SURVEY</h2>
 		<h4>Please rate how important each of the following are to you</h4>
-		<form action="" method="GET" id="prefForm">
+		<form action="" method="GET" id="prefForm" onsubmit="return storePrefFormCookies(this)">
 			<div id="table">
 				<div class="tableRow">
 					<span></span>
@@ -31,19 +31,19 @@
 				<div class="tableRow">
 					<p>Low Pay Ratio Gap
 						<span>
-							<img src="Images/logo2transparent.png" width="22px" alt="Reveal Logo">
+							<img src="images/logo2transparent.png" width="22px" alt="Reveal Logo">
 							<span class="formTooltip">
 								This is the ratio between the pay of the company's chief executive and their median employees.
 								It shows which companies are investing in their workforce to create high-wage jobs.
 							</span>
 						</span>
 					</p>
-					<input type="range" min="1" max="5" value="3" class="prefSlider" name="payRatioPref">
+					<input type="range" min="1" max="5" value="3" class="prefSlider" name="payRatioPref" id="payRatioPref">
 				</div><br>
 				<div class="tableRow">
 					<p>B Corp Status
 						<span>
-							<img src="Images/logo2transparent.png" width="22px" alt="Reveal Logo">
+							<img src="images/logo2transparent.png" width="22px" alt="Reveal Logo">
 							<span class="formTooltip">
 								Certified B Corporations are a new kind of business that balances purpose and profit.
 								They are legally required to consider the impact of their decisions on their workers, customers,
@@ -56,7 +56,7 @@
 				<div class="tableRow">
 					<p>UN Climate Neutral Now
 						<span>
-							<img src="Images/logo2transparent.png" width="22px" alt="Reveal Logo">
+							<img src="images/logo2transparent.png" width="22px" alt="Reveal Logo">
 							<span class="formTooltip">
 								The initiative is NOT a certification. Participants follow the three steps (Measure,
 								Reduce, Contribute) and report on its actions and achievements annually.
@@ -68,7 +68,7 @@
 				<div class="tableRow">
 					<p>Climate Neutral Certified
 						<span>
-							<img src="Images/logo2transparent.png" width="22px" alt="Reveal Logo">
+							<img src="images/logo2transparent.png" width="22px" alt="Reveal Logo">
 							<span class="formTooltip">
 								Climate Neutral Certified means a company has measured its carbon emissions, offset
 								all of its emissions by investing in carbon reduction and removal projects like clean
@@ -81,7 +81,7 @@
 				<div class="tableRow">
 					<p>Political contributions from Open Secrets
 						<span>
-							<img src="Images/logo2transparent.png" width="22px" alt="Reveal Logo">
+							<img src="images/logo2transparent.png" width="22px" alt="Reveal Logo">
 							<span class="formTooltip">
 								This metric shows how much individuals from the organization and the organization have
 								spent on political contributions (to candidates, parties, and political organizations)
@@ -93,7 +93,7 @@
 				</div><br>
 			</div>
 			<div>
-				<button type="submit" id="formbutton">SUBMIT</button>
+				<button class="special-button" type="submit">Submit</button>
 			</div>
 		</form>
 	</div>
