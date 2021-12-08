@@ -6,19 +6,15 @@ const ejs = require('ejs');
  * @author Malachy
  */
 let fullData = [];
-  let demoData_csv = fs.readFileSync('postgres/testdata.csv', 'utf8');
-  let demoData = demoData_csv.split("\n");
-
- console.log(demoData)
+let demoData_csv = fs.readFileSync('postgres/testdata.csv', 'utf8');
+let demoData = demoData_csv.split("\n");
 
 
 demoData.forEach(function(company) {
   let data_info = company.split(',');
 
-  // console.log(data_info[3])
-
   let dataObj = {
-        "name": data_info[0].trim(),
+        "name": data_info[0].trim().toLowerCase(),
         "info": {
             "Parent_Company": data_info[1],
             "Industry" : data_info[2],
@@ -43,7 +39,7 @@ demoData.forEach(function(company) {
 
 
 fs.writeFileSync('postgres/data.json', JSON.stringify(fullData), 'utf8');
-//
+
 // let data = fs.readFileSync('postgres/data.json', 'utf8');
 // var demo = JSON.parse(data);
 //

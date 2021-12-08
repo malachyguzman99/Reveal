@@ -75,7 +75,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Dell",
+  "name": "dell",
   "info": {
     "Parent_Company": "",
     "Industry": "Technology hardwear",
@@ -94,7 +94,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Thrive market",
+  "name": "thrive market",
   "info": {
     "Parent_Company": "Whole Foods",
     "Industry": "Food and Beverage Stores",
@@ -113,7 +113,7 @@
     "3-metric": "1\r"
   }
 }, {
-  "name": "Krave Beauty",
+  "name": "krave beauty",
   "info": {
     "Parent_Company": "",
     "Industry": "Pharmaceuticals ",
@@ -132,7 +132,7 @@
     "3-metric": "1\r"
   }
 }, {
-  "name": "Patagonia",
+  "name": "patagonia",
   "info": {
     "Parent_Company": "Yvon Chouinard",
     "Industry": "Apparel",
@@ -151,7 +151,7 @@
     "3-metric": "1\r"
   }
 }, {
-  "name": "Ben and Jerry's",
+  "name": "ben and jerry's",
   "info": {
     "Parent_Company": "Unilever",
     "Industry": "Food Products",
@@ -170,7 +170,7 @@
     "3-metric": "1\r"
   }
 }, {
-  "name": "Malt O Meal",
+  "name": "malt o meal",
   "info": {
     "Parent_Company": "Post",
     "Industry": "Food Products",
@@ -189,7 +189,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Aldi",
+  "name": "aldi",
   "info": {
     "Parent_Company": "Albrecht Discounts",
     "Industry": "Food Products",
@@ -208,7 +208,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Cub foods",
+  "name": "cub foods",
   "info": {
     "Parent_Company": "SuperValu",
     "Industry": "Food Products",
@@ -227,7 +227,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Almond Joy",
+  "name": "almond joy",
   "info": {
     "Parent_Company": "Hershey",
     "Industry": "Food Products",
@@ -246,7 +246,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Doritos",
+  "name": "doritos",
   "info": {
     "Parent_Company": "Pepsi",
     "Industry": "Food Products",
@@ -265,7 +265,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Nature Valley",
+  "name": "nature valley",
   "info": {
     "Parent_Company": "General Mills",
     "Industry": "Food Products",
@@ -284,7 +284,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Snyder's of Hanover",
+  "name": "snyder's of hanover",
   "info": {
     "Parent_Company": "Snyder's-Lance",
     "Industry": "Food Products",
@@ -303,7 +303,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "JIF (peanut butter)",
+  "name": "jif (peanut butter)",
   "info": {
     "Parent_Company": "The J.M. Smucker Company",
     "Industry": "Food Products",
@@ -322,7 +322,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Silk (soymilk)",
+  "name": "silk (soymilk)",
   "info": {
     "Parent_Company": "Danone",
     "Industry": "Food Products",
@@ -341,7 +341,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Timex",
+  "name": "timex",
   "info": {
     "Parent_Company": "",
     "Industry": "Technology hardwear",
@@ -360,7 +360,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Beats",
+  "name": "beats",
   "info": {
     "Parent_Company": "Apple",
     "Industry": "Technology hardwear",
@@ -379,7 +379,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Sony",
+  "name": "sony",
   "info": {
     "Parent_Company": "",
     "Industry": "Technology hardwear",
@@ -398,7 +398,7 @@
     "3-metric": "1\r"
   }
 }, {
-  "name": "Apple",
+  "name": "apple",
   "info": {
     "Parent_Company": "",
     "Industry": "Technology hardwear",
@@ -417,7 +417,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Neutrogena",
+  "name": "neutrogena",
   "info": {
     "Parent_Company": "johnson & Johnson",
     "Industry": "Pharmaceuticals ",
@@ -436,7 +436,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Revlon",
+  "name": "revlon",
   "info": {
     "Parent_Company": "MacAndrews & Forbes",
     "Industry": "Pharmaceuticals ",
@@ -455,7 +455,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Burt's Bees",
+  "name": "burt's bees",
   "info": {
     "Parent_Company": "clorox",
     "Industry": "Pharmaceuticals ",
@@ -474,7 +474,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Downy",
+  "name": "downy",
   "info": {
     "Parent_Company": "Procter & Gamble",
     "Industry": "Household products",
@@ -493,7 +493,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Tide",
+  "name": "tide",
   "info": {
     "Parent_Company": "Procter & Gamble",
     "Industry": "Household products",
@@ -512,7 +512,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Société Bic S.A.",
+  "name": "société bic s.a.",
   "info": {
     "Parent_Company": "",
     "Industry": "Household products",
@@ -531,7 +531,7 @@
     "3-metric": "0\r"
   }
 }, {
-  "name": "Mead",
+  "name": "mead",
   "info": {
     "Parent_Company": "westrock",
     "Industry": "containers and packaging",

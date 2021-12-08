@@ -3,7 +3,7 @@ console.log("js/scripts.js connected to index.html");
 document.getElementById("searchBtn").addEventListener("click", returnCompany);
 
 function returnCompany() {
-  let search = document.getElementById("search").value;
+  let search = document.getElementById("search").value.trim().toLowerCase();
   window.location.href = '/companies/'+search;
   localStorage.setItem(search, search);
   // history();
