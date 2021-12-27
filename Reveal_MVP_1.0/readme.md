@@ -17,3 +17,6 @@ To build the site, run the command below in the terminal:
   node server.js
 ```
 Then open the link in the terminal, which should be http://localhost:3000/
+
+# Style Guidelines
+Before adding anything, read the style-guidelines.txt

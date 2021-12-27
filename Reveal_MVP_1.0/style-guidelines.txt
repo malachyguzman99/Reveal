@@ -1,0 +1,3 @@
+Reveal Site Style Guidelines:
+
+Each page's main content should have id="main-content" for skip navigation button functionality - Oliver T. 12/27/21
