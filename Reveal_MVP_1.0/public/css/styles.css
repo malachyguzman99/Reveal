@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f9f5e3;
   font-size: 12px;
@@ -254,4 +258,19 @@ ul.noBullets {
   list-style: none;
   text-transform: capitalize;
   padding-inline-start: 0px;
+}
+
+/* Skip to main content (for accessibility) */
+.skip-nav-link {
+  background: #5d2e46;
+  padding: 0.5rem 1.5rem;
+  border-radius: .25rem;
+  position: absolute;
+  left: 0.5rem;
+  transform: translateX(-125%);
+  transition: transform 325ms ease-in;
+}
+
+.skip-nav-link:focus {
+  transform: translateX(0%);
 }
