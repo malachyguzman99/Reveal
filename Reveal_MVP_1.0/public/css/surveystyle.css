@@ -7,16 +7,14 @@ body
 	text-align: center !important;
 }
 
-#content
+#main-content
 {
 	margin: 10px 75px;
 	padding: 30px;
-	background-color: #f1f1f1;
 }
 
 #prefForm div
 {
-	width: 100%;
 	margin: 40px 0px;
 }
 
@@ -52,7 +50,6 @@ body
 	text-align: right;
 	font-size: 130%;
 	font-weight: bold;
-	color: #183a37;
 	width: 25%;
 }
 
@@ -146,7 +143,7 @@ input#politicalPrefSlider::-ms-track
 
 input.prefSlider::-ms-fill-upper, input.prefSlider::-ms-fill-lower
 {
-	background-color: #f9f5e3;
+	background-color: #f7f6e1;
 }
 
 input.prefSlider::-webkit-slider-thumb
@@ -157,7 +154,7 @@ input.prefSlider::-webkit-slider-thumb
 	width: 25px;
 	border-radius: 25px;
 	border: 2px black solid;
-	background-color: #c6ca53;
+	background-color: #6d2878;
 	margin-top: -8px;
 }
 
@@ -169,7 +166,7 @@ input.prefSlider::-moz-range-thumb
 	width: 25px;
 	border-radius: 25px;
 	border: 2px black solid;
-	background-color: #c6ca53;
+	background-color: #6d2878;
 }
 
 input.prefSlider::-ms-thumb
@@ -180,23 +177,23 @@ input.prefSlider::-ms-thumb
 	width: 14px;
 	border-radius: 14px;
 	border: 2px black solid;
-	background-color: #c6ca53;
+	background-color: #6d2878;
 	margin-top: 0;
 }
 
 input.prefSlider::-webkit-slider-thumb:hover
 {
-	background-color: #acb036
+	background-color: #8b3399;
 }
 
 input.prefSlider::-moz-range-thumb:hover
 {
-	background-color: #acb036
+	background-color: #8b3399;
 }
 
 input.prefSlider::-ms-thumb:hover
 {
-	background-color: #acb036
+	background-color: #8b3399;
 }
 
 input.prefSlider::-ms-tooltip
@@ -207,4 +204,9 @@ input.prefSlider::-ms-tooltip
 button
 {
 	border: none;
+}
+
+button.special-button:hover
+{
+	background-color: #b9aeac;
 }

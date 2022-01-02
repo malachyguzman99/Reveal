@@ -3,15 +3,15 @@ html {
 }
 
 body {
-  background-color: #f9f5e3;
+  background-color: #fbfbfb;
   font-size: 12px;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  color: #5d2e46;
+  color: #6d2878;
 }
 
 footer {
-  color: #183a37;
+  color: #e58419;
   text-align: left;
   padding: 20px;
   padding-top: 150px;
@@ -22,12 +22,12 @@ footer {
 
 header
 {
-  background-color: #5d2e46;
+  background-color: #6d2878;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
   font-size: 400%;
   letter-spacing: .4em;
-  color: #f9f5e3;
+  color: #f7f6e1;
   padding-top: 40px;
   padding-bottom: 40px;
   margin: 0px;
@@ -39,17 +39,16 @@ header
 }
 
 h1 { /* ex-Company Title (Company Page)*/
-  padding-top: 30px;
   text-align: left;
-  color: #183a37 !important;
+  color: #6d2878 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  font-size: 230%;
+  font-size: 250%;
 }
 
 h2 { /* ex-"Preference Survey" (Survey page)*/
   padding-top: 0px;
-  color: #183a37 !important;
+  color: #6d2878 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
   font-size: 400%;
@@ -60,20 +59,20 @@ h3 /* Company Title Subtext (industry) (Company page) */
   font-size: 80%;
 	font-weight: medium;
 	font-style: italic;
-	color: #183a37;
+	color: #6d2878;
   text-transform: capitalize;
 }
 
 h4/*ex- subtitle "Please rate how important each of the following are to you" (Survey Page)*/
 {
 	font-size: 167%;
-	color: #5d2e46;
+	color: #2d1221;
 }
 
 h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
   width: 100%;
   text-transform: uppercase;
-  color: #f9f5e3;
+  color: #f7f6e1;
   background-color: #a49694;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
@@ -85,7 +84,7 @@ h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
 }
 
 p {
-  color: #183a37;
+  color: #2d1221;
   font-family: 'Futura', sans-serif;
   text-align: center;
   font-size: 18px;
@@ -95,7 +94,7 @@ p {
 
 p a
 {
-  color: #9a4c73 ;
+  color: #6d2878;
 }
 
 p a:hover
@@ -115,7 +114,7 @@ p a:hover
 }
 
 nav {
-  background-color: #f9e0d9;
+  background-color: #f6ddd6;
   margin-bottom: 60px;
   padding: 0px 15px !important;
 }
@@ -128,13 +127,13 @@ nav {
   font-family: 'Futura', sans-serif;
   font-weight: medium;
   font-size: 200%;
-  color: #5d2e46 !important;
+  color: #6d2878 !important;
   padding: 20px 30px !important;
 }
 
 .nav-link:hover
 {
-  background-color: #f5c9bd;
+  background-color: #f2cbc0;
 }
 
 .form-control{
@@ -142,7 +141,7 @@ nav {
   font-weight: medium;
   font-style: italic;
   font-size: 250%;
-  color: #a49694 !important;
+  color: #a53861 !important;
 }
 
 .row {
@@ -156,7 +155,7 @@ nav {
 }
 
 div.margin {
-  background-color: #f9f5e3;
+  /* background-color: #f7f6e1; */
 	margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -182,10 +181,9 @@ div.margin {
 
   .flex-container > div {
   max-width: 700px;
-	background-color: #f1f1f1;
 	margin: 10px;
 	padding: 20px;
-	font-size: 200%;
+	font-size: 160%;
   }
 
 badge { /* Big green circle */
@@ -196,7 +194,7 @@ badge { /* Big green circle */
   font-size: 2em;
   vertical-align: middle;
   border-radius: 50%;
-  background: #c6ca53;
+  background: #61c9a8;
 }
 
 ul.greenBullets { /* From W3 Schools */
@@ -211,7 +209,7 @@ ul.greenBullets li, ul.inlineList li
 
 ul.greenBullets li::before { /* From W3 Schools */
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #c6ca53; /* Change the color */
+  color: #61c9a8; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   font-size: 100px;
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -236,7 +234,7 @@ ul.redBullets li, ul.inlineList li
 
 ul.redBullets li::before { /* From W3 Schools */
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #DB5461; /* Change the color */
+  color: #a53861; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   font-size: 100px;
   display: inline-block; /* Needed to add space between the bullet and the text */
@@ -262,7 +260,7 @@ ul.noBullets {
 
 /* Skip to main content (for accessibility) */
 .skip-nav-link {
-  background: #5d2e46;
+  background: #6d2878;
   padding: 0.5rem 1.5rem;
   border-radius: .25rem;
   position: absolute;
