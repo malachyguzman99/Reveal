@@ -1,0 +1,552 @@
+[{
+  "name": "jellycat",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Miscellaneous",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "(no contributions. no data)",
+    "Open_Secrets_cont_lean": "",
+    "Open_Secrets_lobby": "",
+    "Open_Secrets_sup_bill": "",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "ettitude",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Household products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "1",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "no contributions/ no data",
+    "Open_Secrets_cont_lean": "",
+    "Open_Secrets_lobby": "",
+    "Open_Secrets_sup_bill": "",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "1\r"
+  }
+}, {
+  "name": "nestle",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "(contributions: $345257 (mixed) - Lobbying $1435000 - most lobbied bill H.R.397: Rehabilitation for Multiemployer Pensions Act of 2019)",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "1435000",
+    "Open_Secrets_sup_bill": "H.R.397: Rehabilitation for Multiemployer Pensions Act of 2019",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Nestle S.A. (Switzerland): 24.2 medium risk",
+    "Sustainalytics_industry": "59 out of 596 (food products group)",
+    "Sustainalytics_companies": "5572 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "hydroflask",
+  "info": {
+    "Parent_Company": "Helen of Troy Limited",
+    "Industry": "Miscellaneous ",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "140:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "no contributions/no data",
+    "Open_Secrets_cont_lean": "",
+    "Open_Secrets_lobby": "",
+    "Open_Secrets_sup_bill": "",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "dell",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Technology hardwear",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "14:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: 4001642 (mixed) - Lobbying:$4530000 - Most lobbied bill: H.R.748: Relief for Workers Affected by Coronavirus Act",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "4530000",
+    "Open_Secrets_sup_bill": "H.R.748: Relief for Workers Affected by Coronavirus Act",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "16.1 low risk",
+    "Sustainalytics_industry": "163 out of 600 (technology hardware group)",
+    "Sustainalytics_companies": "1621 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "thrive market",
+  "info": {
+    "Parent_Company": "Whole Foods",
+    "Industry": "Food and Beverage Stores",
+    "B_Corp_Certification": "1",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Lobbying: $180000 (2009)",
+    "Open_Secrets_cont_lean": "n/a",
+    "Open_Secrets_lobby": "180000",
+    "Open_Secrets_sup_bill": "unknown",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Amazon: 30 high risk",
+    "Sustainalytics_industry": "459 out of 467 (retailing)",
+    "Sustainalytics_companies": "8919 out of 14979 companies total",
+    "3-metric": "1\r"
+  }
+}, {
+  "name": "krave beauty",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Pharmaceuticals ",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "1",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "no contributions/ no data ",
+    "Open_Secrets_cont_lean": "",
+    "Open_Secrets_lobby": "",
+    "Open_Secrets_sup_bill": "",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "1\r"
+  }
+}, {
+  "name": "patagonia",
+  "info": {
+    "Parent_Company": "Yvon Chouinard",
+    "Industry": "Apparel",
+    "B_Corp_Certification": "1",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $680566 (mostly democratic) - Lobbying: $40000 - most lobbied bill S.337: Preserving the MotorCities Heritage Act",
+    "Open_Secrets_cont_lean": "mostly democratic",
+    "Open_Secrets_lobby": "40000",
+    "Open_Secrets_sup_bill": "S.337: Preserving the MotorCities Heritage Act",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "1\r"
+  }
+}, {
+  "name": "ben and jerry's",
+  "info": {
+    "Parent_Company": "Unilever",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "1",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Lobbying: $136854 - Contributions: $11460000 (mixed leaning democratic) - most lobbied bill S.2941: Recycling Enhancements to Collection and Yield through Consumer Learning and Education Act of 2019",
+    "Open_Secrets_cont_lean": "mixed leaning democrat",
+    "Open_Secrets_lobby": "136854",
+    "Open_Secrets_sup_bill": "S.2941: Recycling Enhancements to Collection and Yield through Consumer Learning and Education Act of 2019",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Unilever: 21.6 medium",
+    "Sustainalytics_industry": "8 out of 104 (household products)",
+    "Sustainalytics_companies": "4135 out of 14979 companies total",
+    "3-metric": "1\r"
+  }
+}, {
+  "name": "malt o meal",
+  "info": {
+    "Parent_Company": "Post",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "193:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "no contributions/ no data",
+    "Open_Secrets_cont_lean": "",
+    "Open_Secrets_lobby": "",
+    "Open_Secrets_sup_bill": "",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Post: 44.7 severe",
+    "Sustainalytics_industry": "468 out of 596 (food products)",
+    "Sustainalytics_companies": "13982 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "aldi",
+  "info": {
+    "Parent_Company": "Albrecht Discounts",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Little data- leans republican",
+    "Open_Secrets_cont_lean": "leaning republican",
+    "Open_Secrets_lobby": "unknown",
+    "Open_Secrets_sup_bill": "unknown",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "cub foods",
+  "info": {
+    "Parent_Company": "SuperValu",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $17428 (mixed leaning democratic)",
+    "Open_Secrets_cont_lean": "mixed leaning democrat",
+    "Open_Secrets_lobby": "0",
+    "Open_Secrets_sup_bill": "none",
+    "LGBTQ": "40",
+    "Sustainalytics_overall": "United Natural Foods: 16.7 low",
+    "Sustainalytics_industry": "15 out of 202 (food retailers)",
+    "Sustainalytics_companies": "1858 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "almond joy",
+  "info": {
+    "Parent_Company": "Hershey",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "630:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $109254 (mixed leaning republican)-  Lobbying: $695000 - most lobbied bill: H.Res.904: Second Coronavirus Preparedness and Response Supplemental Appropriations Act of 2020",
+    "Open_Secrets_cont_lean": "mixed leaning republican",
+    "Open_Secrets_lobby": "695000",
+    "Open_Secrets_sup_bill": "H.Res.904: Second Coronavirus Preparedness and Response Supplemental Appropriations Act 2020",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Hershey: 25.7 medium",
+    "Sustainalytics_industry": "75 out of 596 (food products)",
+    "Sustainalytics_companies": "6453 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "doritos",
+  "info": {
+    "Parent_Company": "Pepsi",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "462:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $87809 (mixed) - Lobbying: $3690000 - Most lobbied Bill H.R.1406: APEX Act",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "3690000",
+    "Open_Secrets_sup_bill": "H.R.1406: APEX Act",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Pepsico: 16 low",
+    "Sustainalytics_industry": "5 out of 596 (food products)",
+    "Sustainalytics_companies": "1590 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "nature valley",
+  "info": {
+    "Parent_Company": "General Mills",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "205:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $456520 (mixed) - Lobbying: $620000 - Most Lobbied bill: H.R.5: Equality Act",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "620000",
+    "Open_Secrets_sup_bill": "H.R.5: Equality Act",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "General Mills: 21.7 medium",
+    "Sustainalytics_industry": "34 out of 596 (food products)",
+    "Sustainalytics_companies": "4155 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "snyder's of hanover",
+  "info": {
+    "Parent_Company": "Snyder's-Lance",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $8962 (mixed leaning republican)",
+    "Open_Secrets_cont_lean": "mixed leaning republican",
+    "Open_Secrets_lobby": "0",
+    "Open_Secrets_sup_bill": "none",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Campbell Soup: 22.4 medium",
+    "Sustainalytics_industry": "40 out of 596 (food products)",
+    "Sustainalytics_companies": "4597 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "jif (peanut butter)",
+  "info": {
+    "Parent_Company": "The J.M. Smucker Company",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "136:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $507047 (mostly republican) - Lobbying: $330000- Most lobbied bill: H.R.6800: Worker Health Coverage Protection Act",
+    "Open_Secrets_cont_lean": "mostly republican",
+    "Open_Secrets_lobby": "330000",
+    "Open_Secrets_sup_bill": "H.R.6800: Worker Health Coverage Protection Act",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "J.M. Smucker: 31 high",
+    "Sustainalytics_industry": "175 out of 596 (food products)",
+    "Sustainalytics_companies": "9417 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "silk (soymilk)",
+  "info": {
+    "Parent_Company": "Danone",
+    "Industry": "Food Products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $5975 (mostly democratic) - Lobbying: $770000 - Most lobbied bill: H.R.3055: United States Victims of State Sponsored Terrorism Fund Clarification Act",
+    "Open_Secrets_cont_lean": "mostly democrat",
+    "Open_Secrets_lobby": "770000",
+    "Open_Secrets_sup_bill": "H.R.3055: United States Victims of State Sponsored Terrorism Fund Clarification Act",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "owned by Danone North America (a B-corp) but Danone S.A. the broader company based in France is the one rated: 19.9 low",
+    "Sustainalytics_industry": "21 out of 596 (food products)",
+    "Sustainalytics_companies": "3262 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "timex",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Technology hardwear",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $1017 (mixed- leaning democratic)",
+    "Open_Secrets_cont_lean": "mixed leaning democrat",
+    "Open_Secrets_lobby": "0",
+    "Open_Secrets_sup_bill": "none",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "beats",
+  "info": {
+    "Parent_Company": "Apple",
+    "Industry": "Technology hardwear",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "256:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $8726449 (mixed) - Lobbying: $6650000  - Most lobbied bill: S.3398: Eliminating Abusive and Rampant Neglect of Interactive Technologies Act of 2020",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "6650000",
+    "Open_Secrets_sup_bill": "S.3398: Eliminating Abusive and Rampant Neglect of Interactive Technologies Act of 2020",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Apple: 16.2 low",
+    "Sustainalytics_industry": "167 out of 600 (technology hardware)",
+    "Sustainalytics_companies": "1677 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "sony",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Technology hardwear",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "1",
+    "Open_Secrets_cont_lobby": "Contributions: $2025009 (mixed leading democratic) - Lobbying: $2386078 - Most lobbied bill: H.R.6800: Worker Health Coverage Protection Act",
+    "Open_Secrets_cont_lean": "mixed leaning democrat",
+    "Open_Secrets_lobby": "2386078",
+    "Open_Secrets_sup_bill": "H.R.6800: Worker Health Coverage Protection Act",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "13.9 low",
+    "Sustainalytics_industry": "23 out of 222 (consumer durables)",
+    "Sustainalytics_companies": "937 out of 14979 companies total",
+    "3-metric": "1\r"
+  }
+}, {
+  "name": "apple",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Technology hardwear",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "256:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $8726449 (mixed) - Lobbying: $6650000  - Most lobbied bill: S.3398: Eliminating Abusive and Rampant Neglect of Interactive Technologies Act of 2020",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "6650000",
+    "Open_Secrets_sup_bill": "S.3398: Eliminating Abusive and Rampant Neglect of Interactive Technologies Act of 2020",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "16.2 low",
+    "Sustainalytics_industry": "167 out of 600 (technology hardware)",
+    "Sustainalytics_companies": "1677 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "neutrogena",
+  "info": {
+    "Parent_Company": "johnson & Johnson",
+    "Industry": "Pharmaceuticals ",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "365:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $2138687 (mixed) - Lobbying: $5570000 - most lobbied bill: H.R.748: Relief for Workers Affected by Coronavirus Act",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "5570000",
+    "Open_Secrets_sup_bill": "H.R.748: Relief for Workers Affected by Coronavirus Act",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "27.1 medium",
+    "Sustainalytics_industry": "137 out of 1027 (pharmaceuticals)",
+    "Sustainalytics_companies": "7215 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "revlon",
+  "info": {
+    "Parent_Company": "MacAndrews & Forbes",
+    "Industry": "Pharmaceuticals ",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $1000014 (mixed) - Lobbying ($1270000)- Most lobbied Bill: H.R.2968: Department of Defense Appropriations Act 2020",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "1270000",
+    "Open_Secrets_sup_bill": "H.R.2968: Department of Defense Appropriations Act 2020",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "n/a",
+    "Sustainalytics_industry": "",
+    "Sustainalytics_companies": "",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "burt's bees",
+  "info": {
+    "Parent_Company": "clorox",
+    "Industry": "Pharmaceuticals ",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "165:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $473252 (mixed)",
+    "Open_Secrets_cont_lean": "mixed",
+    "Open_Secrets_lobby": "0",
+    "Open_Secrets_sup_bill": "none",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "Clorox: 22 medium",
+    "Sustainalytics_industry": "11 out of 104 (household products)",
+    "Sustainalytics_companies": "4338 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "downy",
+  "info": {
+    "Parent_Company": "Procter & Gamble",
+    "Industry": "Household products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "333:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $1186012 (Mixed leaning republican) - Lobbying: $3284028 - most lobbied Bill : H.R.269: Over-the-Counter Monograph User Fee Act of 2019",
+    "Open_Secrets_cont_lean": "mixed leaning republican",
+    "Open_Secrets_lobby": "3284028",
+    "Open_Secrets_sup_bill": "H.R.269: Over-the-Counter Monograph User Fee Act of 2019",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "Procter & Gamble: 27 medium",
+    "Sustainalytics_industry": "35 out of 104 (household products)",
+    "Sustainalytics_companies": "7142 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "tide",
+  "info": {
+    "Parent_Company": "Procter & Gamble",
+    "Industry": "Household products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "333:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $1186012 (Mixed leaning republican) - Lobbying: $3284028 - most lobbied Bill : H.R.269: Over-the-Counter Monograph User Fee Act of 2019",
+    "Open_Secrets_cont_lean": "mixed leaning republican",
+    "Open_Secrets_lobby": "3284028",
+    "Open_Secrets_sup_bill": "H.R.269: Over-the-Counter Monograph User Fee Act of 2020",
+    "LGBTQ": "100",
+    "Sustainalytics_overall": "Procter & Gamble: 27 medium",
+    "Sustainalytics_industry": "35 out of 104 (household products)",
+    "Sustainalytics_companies": "7142 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "société bic s.a.",
+  "info": {
+    "Parent_Company": "",
+    "Industry": "Household products",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "unavailable",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "no contributions/No data ",
+    "Open_Secrets_cont_lean": "",
+    "Open_Secrets_lobby": "",
+    "Open_Secrets_sup_bill": "",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "Societe BIC SA: 24.2 medium",
+    "Sustainalytics_industry": "20 out of 104 (household products)",
+    "Sustainalytics_companies": "5555 out of 14979 companies total",
+    "3-metric": "0\r"
+  }
+}, {
+  "name": "mead",
+  "info": {
+    "Parent_Company": "westrock",
+    "Industry": "containers and packaging",
+    "B_Corp_Certification": "0",
+    "Climate_Neutral": "0",
+    "Pay_Ratio": "190:1",
+    "UN_Global_Compact": "0",
+    "Open_Secrets_cont_lobby": "Contributions: $1476853 (mostly republican) - Lobbying: $225304 - most lobbied bill: S.1396: Protect America's Paper for Recycling Act",
+    "Open_Secrets_cont_lean": "mostly republican",
+    "Open_Secrets_lobby": "225304",
+    "Open_Secrets_sup_bill": "S.1396: Protect America's Paper for Recycling Act",
+    "LGBTQ": "unavailable",
+    "Sustainalytics_overall": "WestRock: 18 low",
+    "Sustainalytics_industry": "46 out of 98 (containers and packaging)",
+    "Sustainalytics_companies": "2434 out of 14979 companies total",
+    "3-metric": "0"
+  }
+}]

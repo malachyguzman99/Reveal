@@ -1,0 +1,28 @@
+<%- include ('global/header', {title:"Reveal"}); %>
+<%- include ('global/navbar'); %>
+
+
+  <div class = "container" id="main-content">
+      <div class="row d-flex align-items-center">
+        <div class="input-group">
+           <input type="text" class="form-control" placeholder="Company name" id = "search">
+           <div class="input-group-append">
+               <button class="btn btn-secondary" type="button" id="searchBtn">
+                   <!-- <i class="fa fa-search">Search</i> -->
+                   <img src="../images/newlogo_transparent.png" width=40px alt="magnifying glass">
+               </button>
+           </div>
+         </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <p> Click <a href="/survey">here</a> to take the preference survey. </p>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <!-- <h5> Search History </h5> -->
+      </div>
+  </div>
+
+
+  <%- include ('global/footer'); %>

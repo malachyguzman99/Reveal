@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbfbfb;
+  font-size: 12px;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  color: #6d2878;
+}
+
+footer {
+  color: #e58419;
+  text-align: left;
+  padding: 20px;
+  padding-top: 150px;
+  font-family: 'Futura', sans-serif;
+  font-size: 130%;
+	font-weight: medium;
+}
+
+header
+{
+  background-color: #6d2878;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 400%;
+  letter-spacing: .4em;
+  color: #f7f6e1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0px;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 { /* ex-Company Title (Company Page)*/
+  text-align: left;
+  color: #6d2878 !important;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 250%;
+}
+
+h2 { /* ex-"Preference Survey" (Survey page)*/
+  padding-top: 0px;
+  color: #6d2878 !important;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 400%;
+}
+
+h3 /* Company Title Subtext (industry) (Company page) */
+{
+  font-size: 80%;
+	font-weight: medium;
+	font-style: italic;
+	color: #6d2878;
+  text-transform: capitalize;
+}
+
+h4/*ex- subtitle "Please rate how important each of the following are to you" (Survey Page)*/
+{
+	font-size: 167%;
+	color: #2d1221;
+}
+
+h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
+  width: 100%;
+  text-transform: uppercase;
+  color: #f7f6e1;
+  background-color: #a49694;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 20% 15px 20%;
+  letter-spacing: .1em;
+}
+
+p {
+  color: #2d1221;
+  font-family: 'Futura', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+p a
+{
+  color: #6d2878;
+}
+
+p a:hover
+{
+  text-decoration: none;
+  color: #5d2e46;
+}
+
+#searchBtn
+{
+  background-color: white;
+}
+
+#searchBtn:hover
+{
+  background-color: #eeeeee;
+}
+
+nav {
+  background-color: #f6ddd6;
+  margin-bottom: 60px;
+  padding: 0px 15px !important;
+}
+
+.nav-item{
+  display: inline;
+}
+
+.nav-link{
+  font-family: 'Futura', sans-serif;
+  font-weight: medium;
+  font-size: 200%;
+  color: #6d2878 !important;
+  padding: 20px 30px !important;
+}
+
+.nav-link:hover
+{
+  background-color: #f2cbc0;
+}
+
+.form-control{
+  font-family: 'Futura', sans-serif;
+  font-weight: medium;
+  font-style: italic;
+  font-size: 250%;
+  color: #a53861 !important;
+}
+
+.row {
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+}
+
+.nav-link.dropdown-toggle,
+.dropdown-item {
+  color: #3f7e9c;
+}
+
+div.margin {
+  /* background-color: #f7f6e1; */
+	margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/* Shrink margins on tablets and phones. */
+@media only screen and (max-device-width: 1366px) {
+  div.margin {
+    margin-left: auto;
+      margin-right: auto;
+      width: 95%;
+  }
+}
+
+/* Flex box to make a two-column display */
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
+  .flex-container > div {
+  max-width: 700px;
+	margin: 10px;
+	padding: 20px;
+	font-size: 160%;
+  }
+
+badge { /* Big green circle */
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  font-size: 2em;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #61c9a8;
+}
+
+ul.greenBullets { /* From W3 Schools */
+  list-style: none; /* Remove default bullets */
+  padding-inline-start: 50px;
+}
+
+ul.greenBullets li, ul.inlineList li
+{
+  padding-top: 15px;
+}
+
+ul.greenBullets li::before { /* From W3 Schools */
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #61c9a8; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 100px;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 40px; /* Also needed for space (tweak if needed)(tweaked by AJ, 20px -> 40px) */
+  margin-left: -.2em; /* Also needed for space (tweak if needed) */
+  margin-top: -100px;
+  margin-bottom: -1em;
+  position: relative;
+  left: -30px;
+  bottom: -29px;
+}
+
+ul.redBullets { /* From W3 Schools */
+  list-style: none; /* Remove default bullets */
+  padding-inline-start: 50px;
+}
+
+ul.redBullets li, ul.inlineList li
+{
+  padding-top: 15px;
+}
+
+ul.redBullets li::before { /* From W3 Schools */
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #a53861; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  font-size: 100px;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 40px; /* Also needed for space (tweak if needed)(tweaked by AJ, 20px -> 40px) */
+  margin-left: -.2em; /* Also needed for space (tweak if needed) */
+  margin-top: -100px;
+  margin-bottom: -1em;
+  position: relative;
+  left: -30px;
+  bottom: -29px;
+}
+
+ul.inlineList {
+  padding-top: 0.5em;
+  text-transform: capitalize;
+}
+
+ul.noBullets {
+  list-style: none;
+  text-transform: capitalize;
+  padding-inline-start: 0px;
+}
+
+/* Skip to main content (for accessibility) */
+.skip-nav-link {
+  background: #6d2878;
+  padding: 0.5rem 1.5rem;
+  border-radius: .25rem;
+  position: absolute;
+  left: 0.5rem;
+  transform: translateX(-125%);
+  transition: transform 325ms ease-in;
+}
+
+.skip-nav-link:focus {
+  transform: translateX(0%);
+}

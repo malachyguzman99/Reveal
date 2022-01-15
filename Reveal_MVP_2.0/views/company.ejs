@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title><%= data.name %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" href="../images/newlogo_transparent.png" type="image" sizes="16x16">
+  <script src="../js/scripts.js"></script>
+</head>
+
+  <body>
+
+    <header>REVEAL</header>
+
+    <!-- <%- include ('global/header', {title: data.name}); %> -->
+    <%- include('global/navbar'); %>
+
+
+    <div class="margin" id="main-content">
+      <div class="flex-container">
+        <!-- Left/First column -->
+        <div>
+          <h1 class="uppercase"> <%=data.name%> </h1>
+          <h3> Industry: <%=data.info.Industry%> </h3>
+
+          <% if(data.info.Parent_Company == ""){%>
+            <h3> Parent Company: None </h3>
+
+          <%} else {%>
+          <h3> Parent Company: <%=data.info.Parent_Company%> </h3>
+          <%}%>
+
+          <p>Company Bio</p>
+
+          <h5>METRIC SCORES</h5>
+
+          <ul class="inlineList noBullets">
+            <!-- <li>100 - HRC Equality Index</li>
+            <li>15.4 - B Impact Score</li> -->
+
+            <li>Overall Sustainalytics Score - <%=data.info.Sustainalytics_overall%> </li>
+            <li>Industry Sustainalytics Score - <%=data.info.Sustainalytics_industry%> </li>
+            <li>LGBTQ Representation - <%=data.info.LGBTQ%> </li>
+            <li>Pay Ratio - <%=data.info.Pay_Ratio%> </li>
+            <li>Political Lean - <%=data.info.Open_Secrets_cont_lean%> </li>
+            <li>Political Lobbying Spending - $<%=String(data.info.Open_Secrets_lobby).replace(/(.)(?=(\d{3})+$)/g,'$1,')%></li>
+            <li>Most Supported Bill - <%=data.info.Open_Secrets_sup_bill%></li>
+
+          </ul>
+
+        </div>
+        <!-- Right/Second column -->
+        <div>
+          <div class="ratingNumber">
+            <badge>
+              <script>document.write(calculatePreferenceMatchScore())</script>
+            </badge> PREFERENCE MATCH
+          </div>
+
+          <ul class="greenBullets">
+            <% if(data.info.B_Corp_Certification == 1){%>
+              <li>Certified B-Corporation</li>
+            <%}%>
+
+            <% if(data.info.Climate_Neutral == 1){%>
+              <li>Certified Climate Neutral</li>
+            <%}%>
+
+            <% if(data.info.UN_Global_Compact == 1){%>
+              <li>UN Global Compact Member</li>
+            <%}%>
+          </ul>
+
+          <ul class="redBullets">
+            <% if(data.info.B_Corp_Certification == 0){%>
+              <li>Not a Certified B-Corporation</li>
+            <%}%>
+
+            <% if(data.info.Climate_Neutral == 0){%>
+              <li>Not a Certified Climate Neutral</li>
+            <%}%>
+
+            <% if(data.info.UN_Global_Compact == 0){%>
+              <li>Not a UN Global Compact Member</li>
+            <%}%>
+          </ul>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <%- include ('global/footer'); %>
+
+  <!-- <script src="../js/scripts.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
