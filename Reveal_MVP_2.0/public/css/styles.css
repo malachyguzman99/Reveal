@@ -197,6 +197,18 @@ badge { /* Big green circle */
   background: #61c9a8;
 }
 
+
+subBadge { /* Big green circle */
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  font-size: 2em;
+  vertical-align: middle;
+  /* border-radius: 50%; */
+  background: #61c9a8;
+}
+
 ul.greenBullets { /* From W3 Schools */
   list-style: none; /* Remove default bullets */
   padding-inline-start: 50px;
