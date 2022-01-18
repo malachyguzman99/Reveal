@@ -19,20 +19,29 @@
     <!-- <%- include ('global/header', {title: data.name}); %> -->
     <%- include('global/navbar'); %>
 
-
     <div class="margin" id="main-content">
-      <div class="flex-container">
-        <!-- Left/First column -->
+      <div class="container" id="company-page-content">
         <div>
-          <h1 class="uppercase"> <%=data.name%> </h1>
-          <h3> Industry: <%=data.info.Industry%> </h3>
+          <div id="companyPageOverview">
+            <div>
+              <div>
+                <h1 class="uppercase"> <%=data.name%> </h1>
+                <h3> Industry: <%=data.info.Industry%> </h3>
 
-          <% if(data.info.Parent_Company == ""){%>
-            <h3> Parent Company: None </h3>
-
-          <%} else {%>
-          <h3> Parent Company: <%=data.info.Parent_Company%> </h3>
-          <%}%>
+                <% if(data.info.Parent_Company == ""){%>
+                  <h3> Parent Company: None </h3>
+                <%} else {%>
+                <h3> Parent Company: <%=data.info.Parent_Company%> </h3>
+                <%}%>
+              </div>
+              <div>
+                <badge>
+                  <script>document.write(calculatePreferenceMatchScore())</script>%
+                </badge>
+                <span class="badge-heading">MATCH</span>
+              </div>
+            </div>
+          </div>
 
           <p>Company Bio</p>
 
@@ -51,15 +60,6 @@
             <li>Most Supported Bill - <%=data.info.Open_Secrets_sup_bill%></li>
 
           </ul>
-
-        </div>
-        <!-- Right/Second column -->
-        <div>
-          <div class="ratingNumber">
-            <badge>
-              <script>document.write(calculatePreferenceMatchScore())</script>
-            </badge> PREFERENCE MATCH
-          </div>
 
           <ul class="greenBullets">
             <% if(data.info.B_Corp_Certification == 1){%>
