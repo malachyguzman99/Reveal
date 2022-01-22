@@ -202,6 +202,7 @@ badge { /* Big green circle */
   font-size: 2.5em;
   border-radius: 50%;
   background: #61c9a8;
+  padding: 10% 0px;
 }
 
 .badge-heading /*text next to badge*/
@@ -210,16 +211,6 @@ badge { /* Big green circle */
   padding: 0px 10px;
   padding: 5% 0px;
 }
-
-.badge_heading /*text next to badge*/
-{
-  font-size: 1.5em;
-  padding: 0px 10px;
-  margin-bottom: 100px;
-  color: #6d2878;
-}
-
-
 
 ul.greenBullets { /* From W3 Schools */
   list-style: none; /* Remove default bullets */
