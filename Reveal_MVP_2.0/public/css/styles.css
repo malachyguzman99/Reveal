@@ -196,18 +196,18 @@ div.margin {
 }
 
 badge { /* Big green circle */
-  height: 120px;
-  width: 120px;
+  height: 160px;
+  width: 160px;
   display: inline-block;
   text-align: center;
   font-size: 2.5em;
   border-radius: 50%;
   background: #61c9a8;
-  padding: 5% 0px;
 }
 
 .badge_heading /*text next to badge*/
 {
+
   font-size: 1.5em;
   padding: 0px 10px;
   margin-bottom: 100px;
@@ -308,6 +308,7 @@ ul.noBullets {
 {
   display: table-cell;
   width: 50%;
+  vertical-align: top;
 }
 
 #companyPageOverview > div > div:last-child
