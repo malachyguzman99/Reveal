@@ -44,7 +44,11 @@
 
           <p>Company Bio</p>
 
-          <h5>Click each subscore to see more details</h5>
+          Blah blah, blah, we are a company. <br><br>
+
+          <h5>Metric Breakdown</h5>
+
+
 
 
           <div class="ratingNumber">
@@ -52,42 +56,42 @@
           <div class="container">
           <div class="row">
             <div class="col">
-              Transparency
-            </div>
-            <div class="col">
-              Environmental
-            </div>
-            <div class="col">
-              Labor
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#transparency_collapse" aria-expanded="false" aria-controls="collapseExample">
-                Show more
-              </button>
+              <a class="badge_heading" data-bs-toggle="collapse" href="#transparency_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Transparency
+              </a>
               <badge>
-                <script>document.write(calculatePreferenceMatchScore())</script>
+                <script>document.write(calculatePreferenceMatchScore())</script>%
               </badge>
 
+            </div>
+            <div class="col">
+              <a class="badge_heading" data-bs-toggle="collapse" href="#environment_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Environmental
+              </a> <br>
+              <badge>
+                <script>document.write(calculatePreferenceMatchScore())</script>%
+              </badge>
 
+            </div>
+            <div class="col">
+              <a class="badge_heading" data-bs-toggle="collapse" href="#labor_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Labor
+              </a> <br>
+              <badge>
+                <script>document.write(calculatePreferenceMatchScore())</script>%
+              </badge>
+
+            </div>
+          </div>
+
+          <div class="row">
               <div class="collapse" id="transparency_collapse">
                 <div class="card card-body">
                   <ul class="inlineList noBullets">
-                    <li>Transparency score (incorrect) - <%=data.info.Sustainalytics_overall%> </li>
+                    <li>Transparency score (not real) - <%=data.info.Sustainalytics_overall%> </li>
                   </ul>
                 </div>
               </div>
-
-            </div>
-            <div class="col">
-
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#environment_collapse" aria-expanded="false" aria-controls="collapseExample">
-                Show more
-              </button>
-              <badge>
-                <script>document.write(calculatePreferenceMatchScore())</script>
-              </badge>
 
               <div class="collapse" id="environment_collapse">
                 <div class="card card-body">
@@ -97,14 +101,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#labor_collapse" aria-expanded="false" aria-controls="collapseExample">
-                Show more
-              </button>
-              <badge>
-                <script>document.write(calculatePreferenceMatchScore())</script>
-              </badge>
+
 
               <div class="collapse" id="labor_collapse">
                 <div class="card card-body">
@@ -117,68 +114,12 @@
             </div>
           </div>
         </div>
-      </div>
-
-
-
-            <!-- Transparency <br>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#transparency_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <badge>
-                <script>document.write(calculatePreferenceMatchScore())</script>
-              </badge>
-            </a>
-
-
-            <div class="collapse" id="transparency_collapse">
-              <div class="card card-body">
-                <ul class="inlineList noBullets">
-                  <li>Transparency score (incorrect) - <%=data.info.Sustainalytics_overall%> </li>
-                </ul>
-              </div>
-            </div>
-
-            Environmental
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#environment_collapse" aria-expanded="false" aria-controls="collapseExample">
-              Show more
-            </button>
-            <badge>
-              <script>document.write(calculatePreferenceMatchScore())</script>
-            </badge>
-
-            <div class="collapse" id="environment_collapse">
-              <div class="card card-body">
-                <ul class="inlineList noBullets">
-                  <li>Overall Sustainalytics Score - <%=data.info.Sustainalytics_overall%> </li>
-                  <li>Industry Sustainalytics Score - <%=data.info.Sustainalytics_industry%> </li>
-                </ul>
-              </div>
-            </div>
-
-            Labor
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#labor_collapse" aria-expanded="false" aria-controls="collapseExample">
-              Show more
-            </button>
-            <badge>
-              <script>document.write(calculatePreferenceMatchScore())</script>
-            </badge>
-
-            <div class="collapse" id="labor_collapse">
-              <div class="card card-body">
-                <ul class="inlineList noBullets">
-                  <li>LGBTQ Representation - <%=data.info.LGBTQ%> </li>
-                  <li>Pay Ratio - <%=data.info.Pay_Ratio%> </li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
 
 
 
 
 
-
-
-          <ul class="greenBullets">
+          <!-- <ul class="greenBullets">
             <% if(data.info.B_Corp_Certification == 1){%>
               <li>Certified B-Corporation</li>
             <%}%>
@@ -204,7 +145,7 @@
             <% if(data.info.UN_Global_Compact == 0){%>
               <li>Not a UN Global Compact Member</li>
             <%}%>
-          </ul>
+          </ul> -->
 
 
         </div>

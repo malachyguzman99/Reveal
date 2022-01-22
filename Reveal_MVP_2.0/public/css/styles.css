@@ -78,9 +78,11 @@ h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
   font-weight: bold;
   font-size: 30px;
   text-align: center;
+  vertical-align: middle;
   margin-top: 30px;
-  padding: 15px 20% 15px 20%;
-  letter-spacing: .1em;
+  padding: 20px 15px 20px 15px;
+  letter-spacing: .05em;
+  word-spacing: .15em;
 }
 
 p {
@@ -204,23 +206,15 @@ badge { /* Big green circle */
   padding: 5% 0px;
 }
 
-.badge-heading /*text next to badge*/
+.badge_heading /*text next to badge*/
 {
-  font-size: 2.2em;
+  font-size: 1.5em;
   padding: 0px 10px;
+  margin-bottom: 100px;
+  color: #6d2878;
 }
 
 
-subBadge { /* Big green circle */
-  height: 100px;
-  width: 100px;
-  display: table-cell;
-  text-align: center;
-  font-size: 2em;
-  vertical-align: middle;
-  /* border-radius: 50%; */
-  background: #61c9a8;
-}
 
 ul.greenBullets { /* From W3 Schools */
   list-style: none; /* Remove default bullets */
