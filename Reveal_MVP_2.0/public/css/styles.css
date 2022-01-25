@@ -202,7 +202,7 @@ badge { /* Big green circle */
   font-size: 2.5em;
   border-radius: 50%;
   background: #61c9a8;
-  padding: 10% 0px;
+  padding: .8em 0px;
 }
 
 .badge-heading /*text next to badge*/
