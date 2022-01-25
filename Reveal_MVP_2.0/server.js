@@ -49,6 +49,11 @@ app.get('/survey', function(request, response) {
 app.get('/companies/:companyname', function(request, response) {
 
   let totalData = JSON.parse(fs.readFileSync('postgres/data.json', 'utf8'));
+
+  let traData = JSON.parse(fs.readFileSync('data/demo/json/transparency_data.json', 'utf8'));
+  let envData = JSON.parse(fs.readFileSync('data/demo/json/environmental_data.json', 'utf8'));
+  let rigData = JSON.parse(fs.readFileSync('data/demo/json/rights_data.json', 'utf8'));
+
   let companyname = request.params.companyname;
   let companyinfo;
 
@@ -61,7 +66,10 @@ app.get('/companies/:companyname', function(request, response) {
   response.status(200);
   response.setHeader('Content-Type', 'text/html')
   response.render("company", {
-      data: companyinfo
+      data: companyinfo,
+      traData: traData,
+      envData: envData,
+      rigData: rigData
   });
 });
 

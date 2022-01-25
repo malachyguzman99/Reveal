@@ -64,7 +64,7 @@
             <div class="col">
               <a class="badge_heading" data-bs-toggle="collapse" href="#transparency_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Transparency
-              </a>
+              </a><br>
               <badge>
                 <script>document.write(calculatePreferenceMatchScore())</script>%
               </badge>
@@ -94,7 +94,9 @@
               <div class="collapse" id="transparency_collapse">
                 <div class="card card-body">
                   <ul class="inlineList noBullets">
-                    <li>Transparency score (not real) - <%=data.info.Sustainalytics_overall%> </li>
+                    <% for(let i=0;i<traData.length;i++) { %>
+                    <li><%=traData[i].info.scoreName%>: <%=traData[i].info.points%>/<%=traData[i].info.out_of%> </li>
+                    <% } %>
                   </ul>
                 </div>
               </div>
@@ -102,8 +104,9 @@
               <div class="collapse" id="environment_collapse">
                 <div class="card card-body">
                   <ul class="inlineList noBullets">
-                    <li>Overall Sustainalytics Score - <%=data.info.Sustainalytics_overall%> </li>
-                    <li>Industry Sustainalytics Score - <%=data.info.Sustainalytics_industry%> </li>
+                    <% for(let i=0;i<envData.length;i++) { %>
+                    <li><%=envData[i].info.scoreName%>: <%=envData[i].info.points%>/<%=envData[i].info.out_of%> </li>
+                    <% } %>
                   </ul>
                 </div>
               </div>
@@ -112,8 +115,9 @@
               <div class="collapse" id="labor_collapse">
                 <div class="card card-body">
                   <ul class="inlineList noBullets">
-                    <li>LGBTQ Representation - <%=data.info.LGBTQ%> </li>
-                    <li>Pay Ratio - <%=data.info.Pay_Ratio%> </li>
+                    <% for(let i=0;i<rigData.length;i++) { %>
+                    <li><%=rigData[i].info.scoreName%>: <%=rigData[i].info.points%>/<%=rigData[i].info.out_of%> </li>
+                    <% } %>
                   </ul>
                 </div>
               </div>
