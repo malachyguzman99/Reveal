@@ -54,16 +54,24 @@ function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
-  for(let i = 0; i <ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
+
+  const defaultSettings = {payRatioPref:3, bCorpPref:3, unClimateNeutralNowPref:3, climateNeutralPref: 3, politicalPrefSlider: 3};
+
+  if(ca.length>1){
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        console.log(c.substring(name.length, c.length));
+        return c.substring(name.length, c.length);
+      }
     }
   }
-  return "";
+
+  //default return, no preferences
+  return defaultSettings[cname];
 }
 
 function calculatePreferenceMatchScore()

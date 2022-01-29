@@ -34,11 +34,15 @@
                 <%}%>
               </div>
               <div>
+
+                <!-- <span class="badge bg-secondary"><script>document.write(calculatePreferenceMatchScore())</script>%</span> -->
+
                 <badge>
                   <script>document.write(calculatePreferenceMatchScore())</script>%
                 </badge>
+
                 <span class="badge-heading">MATCH</span><br><br>
-                
+
                 See how much this company's actions align with what they say
               </div>
             </div>
@@ -58,31 +62,50 @@
           <div class="container">
           <div class="row">
             <div class="col">
+              <!-- not changing with preference yet -->
               <a class="badge_heading" data-bs-toggle="collapse" href="#transparency_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Transparency
-              </a>
+              </a><br>
               <badge>
-                <script>document.write(calculatePreferenceMatchScore())</script>%
+                <% let tra_pts = 0; %>
+                <% let tra_total = 0; %>
+                <% for(let i=0;i<traData.length;i++) { %>
+                  <% tra_pts += traData[i].info.points; %>
+                  <% tra_total += traData[i].info.out_of; %>
+                <% } %>
+                <% let tra_score = Math.floor(tra_pts/tra_total*100); %>
+                <%=tra_score%>%
               </badge>
-
             </div>
             <div class="col">
               <a class="badge_heading" data-bs-toggle="collapse" href="#environment_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Environmental
               </a> <br>
               <badge>
-                <script>document.write(calculatePreferenceMatchScore())</script>%
+                <% let env_pts = 0; %>
+                <% let env_total = 0; %>
+                <% for(let i=0;i<envData.length;i++) { %>
+                  <% env_pts += envData[i].info.points; %>
+                  <% env_total += envData[i].info.out_of; %>
+                <% } %>
+                <% let env_score = Math.floor(env_pts/env_total*100); %>
+                <%=env_score%>%
               </badge>
-
             </div>
             <div class="col">
-              <a class="badge_heading" data-bs-toggle="collapse" href="#labor_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Labor
+              <a class="badge_heading" data-bs-toggle="collapse" href="#rights_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Human Rights
               </a> <br>
               <badge>
-                <script>document.write(calculatePreferenceMatchScore())</script>%
+                <% let rig_pts = 0; %>
+                <% let rig_total = 0; %>
+                <% for(let i=0;i<rigData.length;i++) { %>
+                  <% rig_pts += rigData[i].info.points; %>
+                  <% rig_total += rigData[i].info.out_of; %>
+                <% } %>
+                <% let rig_score = Math.floor(rig_pts/rig_total*100); %>
+                <%=rig_score%>%
               </badge>
-
             </div>
           </div>
 
@@ -90,7 +113,9 @@
               <div class="collapse" id="transparency_collapse">
                 <div class="card card-body">
                   <ul class="inlineList noBullets">
-                    <li>Transparency score (not real) - <%=data.info.Sustainalytics_overall%> </li>
+                    <% for(let i=0;i<traData.length;i++) { %>
+                    <li><%=traData[i].info.scoreName%>: <%=traData[i].info.points%>/<%=traData[i].info.out_of%> </li>
+                    <% } %>
                   </ul>
                 </div>
               </div>
@@ -98,18 +123,20 @@
               <div class="collapse" id="environment_collapse">
                 <div class="card card-body">
                   <ul class="inlineList noBullets">
-                    <li>Overall Sustainalytics Score - <%=data.info.Sustainalytics_overall%> </li>
-                    <li>Industry Sustainalytics Score - <%=data.info.Sustainalytics_industry%> </li>
+                    <% for(let i=0;i<envData.length;i++) { %>
+                    <li><%=envData[i].info.scoreName%>: <%=envData[i].info.points%>/<%=envData[i].info.out_of%> </li>
+                    <% } %>
                   </ul>
                 </div>
               </div>
 
 
-              <div class="collapse" id="labor_collapse">
+              <div class="collapse" id="rights_collapse">
                 <div class="card card-body">
                   <ul class="inlineList noBullets">
-                    <li>LGBTQ Representation - <%=data.info.LGBTQ%> </li>
-                    <li>Pay Ratio - <%=data.info.Pay_Ratio%> </li>
+                    <% for(let i=0;i<rigData.length;i++) { %>
+                    <li><%=rigData[i].info.scoreName%>: <%=rigData[i].info.points%>/<%=rigData[i].info.out_of%> </li>
+                    <% } %>
                   </ul>
                 </div>
               </div>
@@ -124,7 +151,7 @@
             </li>
             <li>
               Raise a Union Red Flag
-              <p>If you believe that workers in this organization have been 
+              <p>If you believe that workers in this organization have been
                 having difficulty unionizing, click here to raise a red flag.</p>
             </li>
             <li>
