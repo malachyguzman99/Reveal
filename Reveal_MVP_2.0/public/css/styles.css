@@ -211,6 +211,12 @@ badge { /* Big green circle */
   padding: 5% 10px;
 }
 
+.subscore-badge-heading
+{
+  text-decoration: none;
+  color: black;
+}
+
 ul.greenBullets { /* From W3 Schools */
   list-style: none; /* Remove default bullets */
   padding-inline-start: 50px;
@@ -310,4 +316,14 @@ ul.noBullets {
 #companyPageOverview > div > div:last-child
 {
   text-align: right;
+}
+
+.badge-dropdown-arrow
+{
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #f6ddd6;
+  position: relative;
 }
