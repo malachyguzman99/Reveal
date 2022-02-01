@@ -194,15 +194,19 @@ div.margin {
   font-size: 160%;
 }
 
-badge { /* Big green circle */
+.badge { /* Big green circle */
+
   height: 160px;
   width: 160px;
+  color: #6d2878 !important;
+  background: #61c9a8 !important;
+
   display: inline-block;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.25em;
   border-radius: 50%;
-  background: #61c9a8;
-  padding: 10% 0px;
+  padding: 50px 0px;
+
 }
 
 .badge-heading /*text next to badge*/
@@ -303,7 +307,7 @@ ul.noBullets {
 #companyPageOverview > div > div
 {
   display: table-cell;
-  width: 50%;
+  width: 60%;
   vertical-align: top;
 }
 

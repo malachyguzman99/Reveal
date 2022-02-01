@@ -24,6 +24,7 @@
           <div id="companyPageOverview">
             <div>
               <div>
+
                 <h1 class="uppercase"> <%=data.name%> </h1>
                 <h3> Industry: <%=data.info.Industry%> </h3>
 
@@ -33,18 +34,9 @@
                 <h3> Parent Company: <%=data.info.Parent_Company%> </h3>
                 <%}%>
               </div>
-              <div>
 
-                <!-- <span class="badge bg-secondary"><script>document.write(calculatePreferenceMatchScore())</script>%</span> -->
+               <span class="badge-heading"><span class="badge"><script>document.write(calculatePreferenceMatchScore())</script>%</span>&nbsp;MATCH</span><br><br>
 
-                <badge>
-                  <script>document.write(calculatePreferenceMatchScore())</script>%
-                </badge>
-
-                <span class="badge-heading">MATCH</span><br><br>
-
-                See how much this company's actions align with what they say
-              </div>
             </div>
           </div>
 
@@ -53,8 +45,6 @@
           Blah blah, blah, we are a company. <br><br>
 
           <h5>Metric Breakdown</h5>
-
-
 
 
           <div class="ratingNumber">
@@ -66,22 +56,28 @@
               <a class="badge_heading" data-bs-toggle="collapse" href="#transparency_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Transparency
               </a><br>
-              <badge>
-                <% let tra_pts = 0; %>
-                <% let tra_total = 0; %>
-                <% for(let i=0;i<traData.length;i++) { %>
-                  <% tra_pts += traData[i].info.points; %>
-                  <% tra_total += traData[i].info.out_of; %>
-                <% } %>
-                <% let tra_score = Math.floor(tra_pts/tra_total*100); %>
-                <%=tra_score%>%
-              </badge>
+
+              <span class="badge-heading">
+                <span class="badge">
+                  <% let tra_pts = 0; %>
+                  <% let tra_total = 0; %>
+                  <% for(let i=0;i<traData.length;i++) { %>
+                    <% tra_pts += traData[i].info.points; %>
+                    <% tra_total += traData[i].info.out_of; %>
+                  <% } %>
+                  <% let tra_score = Math.floor(tra_pts/tra_total*100); %>
+                  <%=tra_score%>%
+                </span>
+              </span>
+
+
             </div>
             <div class="col">
               <a class="badge_heading" data-bs-toggle="collapse" href="#environment_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Environmental
               </a> <br>
-              <badge>
+              <span class="badge-heading">
+                <span class="badge">
                 <% let env_pts = 0; %>
                 <% let env_total = 0; %>
                 <% for(let i=0;i<envData.length;i++) { %>
@@ -90,13 +86,15 @@
                 <% } %>
                 <% let env_score = Math.floor(env_pts/env_total*100); %>
                 <%=env_score%>%
-              </badge>
+              </span>
+            </span>
             </div>
             <div class="col">
               <a class="badge_heading" data-bs-toggle="collapse" href="#rights_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                 Human Rights
               </a> <br>
-              <badge>
+              <span class="badge-heading">
+                <span class="badge">
                 <% let rig_pts = 0; %>
                 <% let rig_total = 0; %>
                 <% for(let i=0;i<rigData.length;i++) { %>
@@ -105,7 +103,8 @@
                 <% } %>
                 <% let rig_score = Math.floor(rig_pts/rig_total*100); %>
                 <%=rig_score%>%
-              </badge>
+              </span>
+            </span>
             </div>
           </div>
 
