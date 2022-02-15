@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #fbfbfb;
+  background: repeating-linear-gradient(135deg, #a53861, #f6ded7 50%, #6d2878 100%) repeat;
   font-size: 12px;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
@@ -11,27 +11,48 @@ body {
 }
 
 footer {
-  color: #e58419;
+  color: white;
+  background-color: #2d1221;
   text-align: left;
   padding: 20px;
-  padding-top: 150px;
+  margin-top: 150px;
   font-family: 'Futura', sans-serif;
-  font-size: 130%;
-	font-weight: medium;
+  font-size: 140%;
+	font-weight:lighter;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+footer > *
+{
+  width: 33%;
+}
+
+footer #companyname-text
+{
+  text-align: center;
+  font-size: 300%;
+  letter-spacing: .3em;
+  font-weight: bolder;
+}
+
+footer #company-info
+{
+  text-align: right;
 }
 
 header
 {
-  background-color: #6d2878;
   font-family: 'Futura', sans-serif;
-  font-weight: bold;
-  font-size: 400%;
-  letter-spacing: .4em;
+  font-weight: bolder;
+  font-size: 500%;
+  letter-spacing: .3em;
   color: #f7f6e1;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 20px 0px;
   margin: 0px;
   text-align: center;
+  text-shadow: 2px 2px 3px #666666;
 }
 
 .uppercase {
@@ -115,9 +136,9 @@ p a:hover
 }
 
 nav {
-  background-color: #f6ddd6;
   margin-bottom: 60px;
-  padding: 0px 15px !important;
+  padding: 0px 20px !important;
+  background-color: #2d1221;
 }
 
 .nav-item{
@@ -126,15 +147,16 @@ nav {
 
 .nav-link{
   font-family: 'Futura', sans-serif;
-  font-weight: medium;
-  font-size: 200%;
-  color: #6d2878 !important;
-  padding: 20px 30px !important;
+  font-weight: bold;
+  font-size: 240%;
+  color: white !important;
+  padding: 10px 30px !important;
 }
 
 .nav-link:hover
 {
-  background-color: #f2cbc0;
+  background-color: white;
+  color: #2d1221 !important;
 }
 
 .form-control{
@@ -194,15 +216,19 @@ div.margin {
   font-size: 160%;
 }
 
-badge { /* Big green circle */
+.badge { /* Big green circle */
+
   height: 160px;
   width: 160px;
+  color: #6d2878 !important;
+  background: #61c9a8 !important;
+
   display: inline-block;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.25em;
   border-radius: 50%;
-  background: #61c9a8;
-  padding: .8em 0px;
+  padding: 50px 0px;
+
 }
 
 .badge-heading /*text next to badge*/
@@ -309,7 +335,7 @@ ul.noBullets {
 #companyPageOverview > div > div
 {
   display: table-cell;
-  width: 50%;
+  width: 60%;
   vertical-align: top;
 }
 

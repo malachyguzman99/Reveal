@@ -16,6 +16,7 @@ body
 #prefForm div
 {
 	margin: 40px 0px;
+	width: 100%;
 }
 
 #prefForm div#table
@@ -47,10 +48,10 @@ body
 
 #prefForm div#table div.tableRow p
 {
-	text-align: right;
+	text-align: center;
 	font-size: 130%;
 	font-weight: bold;
-	width: 25%;
+	width: 15%;
 	padding-top: 30px;
 }
 
