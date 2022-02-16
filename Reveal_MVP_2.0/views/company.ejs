@@ -25,7 +25,7 @@
             <div>
               <div>
 
-                <h1 class="uppercase"> <%=data.name%> </h1>
+                <h1 class="capitalize"> <%=data.name%> </h1>
                 <h3> Industry: <%=data.info.Industry%> </h3>
 
                 <% if(data.info.Parent_Company == ""){%>
@@ -33,167 +33,56 @@
                 <%} else {%>
                 <h3> Parent Company: <%=data.info.Parent_Company%> </h3>
                 <%}%>
+
+                <br>
+
+                <div class="company-description">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <br>
+
+                <input onclick="showRawData()" id="readMoreBtn" value="READ MORE" type="button"/>
+
               </div>
 
-               <span class="badge-heading"><span class="badge"><script>document.write(calculatePreferenceMatchScore())</script>%</span>&nbsp;MATCH</span><br><br>
+              <img id="match_percent_display" src="../images/placeholder.png"/>
+              <script>displayMatchScore();</script>
 
             </div>
           </div>
 
-          <p>Company Bio</p>
+          <div id="company-raw-data">
 
-          Blah blah, blah, we are a company. <br><br>
-
-          <h5>Metric Breakdown</h5>
+            <h5>The Raw Data</h5>
 
 
-          <div class="ratingNumber">
+            <div class="ratingNumber">
 
-          <div class="container">
-          <div class="row">
-            <div class="col">
-              <!-- not changing with preference yet -->
-              <a class="badge_heading" data-bs-toggle="collapse" href="#transparency_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Transparency
-              </a><br>
-
-              <span class="badge-heading">
-                <span class="badge">
-                  <% let tra_pts = 0; %>
-                  <% let tra_total = 0; %>
-                  <% for(let i=0;i<traData.length;i++) { %>
-                    <% tra_pts += traData[i].info.points; %>
-                    <% tra_total += traData[i].info.out_of; %>
-                  <% } %>
-                  <% let tra_score = Math.floor(tra_pts/tra_total*100); %>
-                  <%=tra_score%>%
-                </span>
-              </span>
-
+              <div class="row metric-bubble">
+                <div class="col-8" style="border-right: 5px solid #333;">
+                  <h4 class="metric-title">TRANSPARENCY</h4>
+                  <h4 class="metric-title">ENVIRONMENTAL</h4>
+                  <h4 class="metric-title">HUMAN RIGHTS</h4>
+                  <h4 class="metric-title">METRIC 4</h4>
+                </div>
+                <div class="col-4">
+                  <h4 class="metric-score">95%</h4>
+                  <h4 class="metric-score">30%</h4>
+                  <h4 class="metric-score">75%</h4>
+                  <h4 class="metric-score">60%</h4>
+                </div>
+              </div>
 
             </div>
-            <div class="col">
-              <a class="badge_heading" data-bs-toggle="collapse" href="#environment_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Environmental
-              </a> <br>
-              <span class="badge-heading">
-                <span class="badge">
-                <% let env_pts = 0; %>
-                <% let env_total = 0; %>
-                <% for(let i=0;i<envData.length;i++) { %>
-                  <% env_pts += envData[i].info.points; %>
-                  <% env_total += envData[i].info.out_of; %>
-                <% } %>
-                <% let env_score = Math.floor(env_pts/env_total*100); %>
-                <%=env_score%>%
-              </span>
-            </span>
-            </div>
-            <div class="col">
-              <a class="badge_heading" data-bs-toggle="collapse" href="#rights_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Human Rights
-              </a> <br>
-              <span class="badge-heading">
-                <span class="badge">
-                <% let rig_pts = 0; %>
-                <% let rig_total = 0; %>
-                <% for(let i=0;i<rigData.length;i++) { %>
-                  <% rig_pts += rigData[i].info.points; %>
-                  <% rig_total += rigData[i].info.out_of; %>
-                <% } %>
-                <% let rig_score = Math.floor(rig_pts/rig_total*100); %>
-                <%=rig_score%>%
-              </span>
-            </span>
-            </div>
+
           </div>
 
-          <div class="row">
-              <div class="collapse" id="transparency_collapse">
-                <div class="card card-body">
-                  <ul class="inlineList noBullets">
-                    <% for(let i=0;i<traData.length;i++) { %>
-                    <li><%=traData[i].info.scoreName%>: <%=traData[i].info.points%>/<%=traData[i].info.out_of%> </li>
-                    <% } %>
-                  </ul>
-                </div>
-              </div>
+          <br>
 
-              <div class="collapse" id="environment_collapse">
-                <div class="card card-body">
-                  <ul class="inlineList noBullets">
-                    <% for(let i=0;i<envData.length;i++) { %>
-                    <li><%=envData[i].info.scoreName%>: <%=envData[i].info.points%>/<%=envData[i].info.out_of%> </li>
-                    <% } %>
-                  </ul>
-                </div>
-              </div>
-
-
-              <div class="collapse" id="rights_collapse">
-                <div class="card card-body">
-                  <ul class="inlineList noBullets">
-                    <% for(let i=0;i<rigData.length;i++) { %>
-                    <li><%=rigData[i].info.scoreName%>: <%=rigData[i].info.points%>/<%=rigData[i].info.out_of%> </li>
-                    <% } %>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h5>Other Resources</h5><br>
-          <ul class="inlineList noBullets">
-            <li>
-              Suggested Alternatives
-              <p>Here are some companies that might align better with your values than
-                <%=data.name%>:</p>
-            </li>
-            <li>
-              Raise a Union Red Flag
-              <p>If you believe that workers in this organization have been
-                having difficulty unionizing, click here to raise a red flag.</p>
-            </li>
-            <li>
-              Generate a Tweet
-              <br>
-              <a target="blank_" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Information%20on%20<%= data.name[0].toUpperCase() + data.name.substring(1) %>%20at%20@Reveal!" class="twitter-share-button" data-size="large" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              <p></p>
-            </li>
-          </ul>
-        </div>
-
-
-
-
-
-          <!-- <ul class="greenBullets">
-            <% if(data.info.B_Corp_Certification == 1){%>
-              <li>Certified B-Corporation</li>
-            <%}%>
-
-            <% if(data.info.Climate_Neutral == 1){%>
-              <li>Certified Climate Neutral</li>
-            <%}%>
-
-            <% if(data.info.UN_Global_Compact == 1){%>
-              <li>UN Global Compact Member</li>
-            <%}%>
-          </ul>
-
-          <ul class="redBullets">
-            <% if(data.info.B_Corp_Certification == 0){%>
-              <li>Not a Certified B-Corporation</li>
-            <%}%>
-
-            <% if(data.info.Climate_Neutral == 0){%>
-              <li>Not a Certified Climate Neutral</li>
-            <%}%>
-
-            <% if(data.info.UN_Global_Compact == 0){%>
-              <li>Not a UN Global Compact Member</li>
-            <%}%>
-          </ul> -->
-
+          <button class="make-another-search">
+            <a class="search-text" href="/">MAKE ANOTHER SEARCH?</a>
+          </button>
 
         </div>
       </div>

@@ -2,6 +2,8 @@ console.log("js/scripts.js connected to index.html");
 
 document.getElementById("searchBtn").addEventListener("click", returnCompany);
 
+document.getElementById("readMoreBtn").addEventListener("click", showRawData);
+
 // Get the input field
 var input = document.getElementById("search");
 
@@ -72,6 +74,21 @@ function getCookie(cname) {
 
   //default return, no preferences
   return defaultSettings[cname];
+}
+
+function showRawData() {
+  let div = document.getElementById("company-raw-data");
+  if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+}
+
+function displayMatchScore() {
+  let match_score = calculatePreferenceMatchScore();
+  document.getElementById("match_percent_display").setAttribute("src", "../images/percents/match" + match_score + ".png");
 }
 
 function calculatePreferenceMatchScore()

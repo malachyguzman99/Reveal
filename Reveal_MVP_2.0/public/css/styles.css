@@ -38,6 +38,10 @@ header
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 h1 { /* ex-Company Title (Company Page)*/
   text-align: left;
   color: #6d2878 !important;
@@ -194,6 +198,15 @@ div.margin {
   font-size: 160%;
 }
 
+.company-description {
+  width: 80%;
+  font-style: italic;
+}
+
+#readMoreBtn {
+  width: 80%;
+}
+
 .badge { /* Big green circle */
 
   height: 160px;
@@ -213,6 +226,39 @@ div.margin {
 {
   font-size: 2.2em;
   padding: 5% 10px;
+}
+
+#match_percent_display {
+  width: 100%;
+}
+
+.company-raw-data {
+
+}
+
+.metric-bubble {
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+.metric-title, .metric-score {
+  padding: 10px;
+}
+
+.make-another-search {
+  width: 100%;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.search-text {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
 }
 
 ul.greenBullets { /* From W3 Schools */
