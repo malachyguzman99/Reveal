@@ -74,6 +74,11 @@ function getCookie(cname) {
   return defaultSettings[cname];
 }
 
+function displayMatchScore() {
+  let match_score = calculatePreferenceMatchScore();
+  document.getElementById("match_percent_display").setAttribute("src", "../images/percents/match" + match_score + ".png");
+}
+
 function calculatePreferenceMatchScore()
 {
   score = parseInt(getCookie("payRatioPref")) + parseInt(getCookie("bCorpPref")) + parseInt(getCookie("unClimateNeutralNowPref")) + parseInt(getCookie("climateNeutralPref")) + parseInt(getCookie("politicalPrefSlider"));

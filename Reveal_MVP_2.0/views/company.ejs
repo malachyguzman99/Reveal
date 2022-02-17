@@ -33,24 +33,37 @@
                 <%} else {%>
                 <h3> Parent Company: <%=data.info.Parent_Company%> </h3>
                 <%}%>
+
+                <br>
+                <p>Company Bio</p>
+
+
+                <div class="company-description">
+                  Patagonia's values reflect those of a business started by a band of
+                  climbers and surfers, and the minimalist style they promoted. The
+                  approach they take toward product design demonstrates a bias for
+                  simplicity and utility.
+                </div>
+
               </div>
 
-               <span class="badge-heading"><span class="badge"><script>document.write(calculatePreferenceMatchScore())</script>%</span>&nbsp;MATCH</span><br><br>
+
+              <img id="match_percent_display" src="../images/placeholder.png"/>
+              <script>displayMatchScore();</script>
+
+               <!-- <span class="badge-heading"><span class="badge"><script>document.write(calculatePreferenceMatchScore())</script>%</span>&nbsp;MATCH</span><br><br> -->
 
             </div>
           </div>
 
           <div class="container">
             <div class="row">
-              <p>Company Bio</p>
+
 
               <div class="col">
 
 
-                Patagonia's values reflect those of a business started by a band of
-                climbers and surfers, and the minimalist style they promoted. The
-                approach they take toward product design demonstrates a bias for
-                simplicity and utility. <br><br>
+                <br><br>
 
 
               </div>

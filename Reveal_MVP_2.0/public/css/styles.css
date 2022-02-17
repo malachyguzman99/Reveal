@@ -217,6 +217,16 @@ div.margin {
   font-size: 160%;
 }
 
+#match_percent_display {
+  width: 100%;
+}
+
+.company-description {
+  width: 80%;
+  font-style: italic;
+  color: #f7f6e1;
+}
+
 .badge { /* Big green circle */
 
   height: 160px;
