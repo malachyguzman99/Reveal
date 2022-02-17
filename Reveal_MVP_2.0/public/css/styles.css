@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: repeating-linear-gradient(135deg, #a53861, #f6ded7 85%, #6d2878 100%) repeat;
+  background: repeating-linear-gradient(150deg, #a53861, #f6ded7 85%, #6d2878 100%) repeat;
   font-size: 12px;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
@@ -70,7 +70,7 @@ h1 { /* ex-Company Title (Company Page)*/
 
 h2 { /* ex-"Preference Survey" (Survey page)*/
   padding-top: 0px;
-  color: #6d2878 !important;
+  color: #2d1221 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
   font-size: 400%;
@@ -88,7 +88,7 @@ h3 /* Company Title Subtext (industry) (Company page) */
 h4/*ex- subtitle "Please rate how important each of the following are to you" (Survey Page)*/
 {
 	font-size: 167%;
-	color: #2d1221;
+	color: #f7f6e1;
 }
 
 h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
@@ -108,7 +108,7 @@ h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
 }
 
 p {
-  color: #2d1221;
+  color: #f7f6e1;
   font-family: 'Futura', sans-serif;
   text-align: center;
   font-size: 18px;
@@ -232,7 +232,7 @@ div.margin {
   height: 160px;
   width: 160px;
   color: #f7f6e1 !important;
-  background: #6d2878 !important;
+  background: #a53861 !important;
 
   display: inline-block;
   text-align: center;
