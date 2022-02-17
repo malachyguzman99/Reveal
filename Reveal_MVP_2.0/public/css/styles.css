@@ -108,7 +108,7 @@ h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
 }
 
 p {
-  color: #f7f6e1;
+  color: #black;
   font-family: 'Futura', sans-serif;
   text-align: center;
   font-size: 18px;
@@ -357,7 +357,7 @@ ul.noBullets {
 {
   text-align: right;
 }
-/* 
+/*
 .badge-dropdown-arrow
 {
   width: 0;
