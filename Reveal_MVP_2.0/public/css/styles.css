@@ -65,7 +65,7 @@ h1 { /* ex-Company Title (Company Page)*/
   color: #f7f6e1 !important;
   font-family: 'Futura', sans-serif;
   font-weight: bold;
-  font-size: 320%;
+  font-size: 335%;
 }
 
 h2 { /* ex-"Preference Survey" (Survey page)*/
@@ -78,7 +78,7 @@ h2 { /* ex-"Preference Survey" (Survey page)*/
 
 h3 /* Company Title Subtext (industry) (Company page) */
 {
-  font-size: 80%;
+  font-size: 85%;
 	font-weight: medium;
 	font-style: italic;
 	color: #f7f6e1;
@@ -218,7 +218,12 @@ div.margin {
 }
 
 #match_percent_display {
-  width: 100%;
+  height: 400px;
+}
+@media (max-width:990px) {
+  #match_percent_display {
+    height: 250px;
+  }
 }
 
 .company-description {

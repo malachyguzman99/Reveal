@@ -25,8 +25,11 @@
             <div>
               <div>
 
+                <br>
+
                 <h1 class="uppercase"> <%=data.name%> </h1>
                 <h3> Industry: <%=data.info.Industry%> </h3>
+                <!-- <h3> Row: <%=otherData%> </h3> -->
 
                 <% if(data.info.Parent_Company == ""){%>
                   <h3> Parent Company: None </h3>
@@ -35,7 +38,7 @@
                 <%}%>
 
                 <br>
-                <p>Company Bio</p>
+                <p style="font-size:20px;">Company Bio</p>
 
 
                 <div class="company-description">
@@ -48,9 +51,10 @@
 
               </div>
 
-
-              <img id="match_percent_display" src="../images/placeholder.png"/>
-              <script>displayMatchScore();</script>
+              <div>
+                <img id="match_percent_display" src="../images/placeholder.png"/>
+                <script>displayMatchScore();</script>
+              </div>
 
                <!-- <span class="badge-heading"><span class="badge"><script>document.write(calculatePreferenceMatchScore())</script>%</span>&nbsp;MATCH</span><br><br> -->
 

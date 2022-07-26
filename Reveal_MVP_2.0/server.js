@@ -3,6 +3,8 @@ const express = require('express');
 const fs = require('fs');
 const ejs = require('ejs');
 
+//..............Sets up postgres.................................//
+
 //..............Create an Express server object..................//
 const app = express();
 
@@ -48,29 +50,51 @@ app.get('/survey', function(request, response) {
 
 app.get('/companies/:companyname', function(request, response) {
 
-  let totalData = JSON.parse(fs.readFileSync('postgres/data.json', 'utf8'));
+  const { Client } = require('pg');
 
-  let traData = JSON.parse(fs.readFileSync('data/demo/json/transparency_data.json', 'utf8'));
-  let envData = JSON.parse(fs.readFileSync('data/demo/json/environmental_data.json', 'utf8'));
-  let rigData = JSON.parse(fs.readFileSync('data/demo/json/rights_data.json', 'utf8'));
-
-  let companyname = request.params.companyname;
-  let companyinfo;
-
-  for(let i in totalData){
-    if(totalData[i].name==companyname){
-      companyinfo = totalData[i];
+  const client = new Client({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
     }
-  }
-
-  response.status(200);
-  response.setHeader('Content-Type', 'text/html')
-  response.render("company", {
-      data: companyinfo,
-      traData: traData,
-      envData: envData,
-      rigData: rigData
   });
+
+  client.connect();
+
+  client.query('SELECT *;', (err, res) => {
+    if (err) throw err;
+
+    let otherData = res;
+    let totalData = JSON.parse(fs.readFileSync('postgres/data.json', 'utf8'));
+
+    let traData = JSON.parse(fs.readFileSync('data/demo/json/transparency_data.json', 'utf8'));
+    let envData = JSON.parse(fs.readFileSync('data/demo/json/environmental_data.json', 'utf8'));
+    let rigData = JSON.parse(fs.readFileSync('data/demo/json/rights_data.json', 'utf8'));
+
+    let companyname = request.params.companyname;
+    let companyinfo;
+
+    for(let i in totalData){
+      if(totalData[i].name==companyname){
+        companyinfo = totalData[i];
+      }
+    }
+
+    response.status(200);
+    response.setHeader('Content-Type', 'text/html')
+    response.render("company", {
+        data: companyinfo,
+        traData: traData,
+        envData: envData,
+        rigData: rigData,
+        otherData: otherData
+    });
+
+    client.end();
+
+  });
+
+
 });
 
 
