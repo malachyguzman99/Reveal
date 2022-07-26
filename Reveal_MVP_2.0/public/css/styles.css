@@ -108,7 +108,7 @@ h5, button.special-button{/*gray text boxes-"Search History," "Metric Scores"*/
 }
 
 p {
-  color: #f7f6e1;
+  color: black;
   font-family: 'Futura', sans-serif;
   text-align: center;
   font-size: 18px;
@@ -138,7 +138,7 @@ p a:hover
 
 nav {
   margin-bottom: 60px;
-  padding-top: 10px !important;
+  padding: 0px !important;
   background-color: #2d1221;
 }
 
@@ -362,7 +362,7 @@ ul.noBullets {
 {
   text-align: right;
 }
-
+/*
 .badge-dropdown-arrow
 {
   width: 0;
@@ -371,4 +371,4 @@ ul.noBullets {
   border-right: 50px solid transparent;
   border-bottom: 50px solid #f6ddd6;
   position: relative;
-}
+} */
