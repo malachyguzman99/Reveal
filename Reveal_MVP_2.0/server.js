@@ -3,7 +3,36 @@ const express = require('express');
 const fs = require('fs');
 const ejs = require('ejs');
 
-//..............Sets up postgres.................................//
+//..............Sets up mongodb.................................//
+
+const auth = JSON.parse(fs.readFileSync("./auth.json"));
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://" + auth["username"] + ":" + auth["password"] + "@reveal-db.tkb9fl6.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
+async function run() {
+  try {
+    await client.connect();
+
+    const db = client.db("sample_airbnb");
+    await db.command({ping:1});
+    console.log("Connected successfully to airbnb");
+
+    const collection = db.collection("listingsAndReviews");
+
+    console.log(await collection.count());
+
+    const reviewCursor = await collection.findOne({
+      name:"Ribeira Charming Duplex"
+    });
+
+    console.log(reviewCursor);
+
+  } finally {
+    client.close();
+  }
+}
+run().catch(console.dir);
 
 //..............Create an Express server object..................//
 const app = express();
@@ -50,21 +79,6 @@ app.get('/survey', function(request, response) {
 
 app.get('/companies/:companyname', function(request, response) {
 
-  const { Client } = require('pg');
-
-  const client = new Client({
-    connectionString: process.env.DATABASE_URL,
-    ssl: {
-      rejectUnauthorized: false
-    }
-  });
-
-  client.connect();
-
-  client.query('SELECT *;', (err, res) => {
-    if (err) throw err;
-
-    let otherData = res;
     let totalData = JSON.parse(fs.readFileSync('postgres/data.json', 'utf8'));
 
     let traData = JSON.parse(fs.readFileSync('data/demo/json/transparency_data.json', 'utf8'));
@@ -86,14 +100,8 @@ app.get('/companies/:companyname', function(request, response) {
         data: companyinfo,
         traData: traData,
         envData: envData,
-        rigData: rigData,
-        otherData: otherData
+        rigData: rigData
     });
-
-    client.end();
-
-  });
-
 
 });
 
